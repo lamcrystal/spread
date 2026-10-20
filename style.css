@@ -1,5 +1,8 @@
 :root{
-	--body-font:"archivo";
+--font-heading: "black archivo";
+--body-font:"archivo";
+
+	--font-heading: var(--heading-font);
 
 /* Spacing value system to create a consistent rhythym */
 	--space-sm: 1rem;
@@ -43,6 +46,10 @@ body{
 h1{
 	color:var(--color-main);
 	font-size:7rem;
+	font-family:var(--font-heading);
+	text-transform: lowercase;
+	letter-spacing:calc(var(--space-sm)*-.5) ;
+
 
 
 }
