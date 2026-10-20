@@ -39,3 +39,10 @@ body{
 	line-height:var(--space-md);
 	padding: var(--space-md);
 }
+
+h1{
+	color:var(--color-main);
+	font-size:7rem;
+
+
+}
