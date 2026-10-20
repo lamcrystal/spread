@@ -43,7 +43,8 @@ h1{
 	font-size:7rem;
 	font-family:var(--font-heading);
 	text-transform: lowercase;
-	letter-spacing:calc(var(--space-sm)*-.5) ;
+	letter-spacing:calc(var(--space-sm)*-.5);
+	line-height: 2;
 }
 
 article p {
