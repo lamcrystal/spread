@@ -13,10 +13,10 @@
 
 /* Text/ type size system */
 	--text-body: 1.2rem;
-	--text-subtitle: calc(var(--text-body)*1.1);
-	--text-h3: calc(var(--text-body)*2.5);
-	--text-h2: calc(var(--text-body)*3.8);
-	--text-h1: calc(var(--text-body)*5.2);
+	--text-subtitle: calc(var(--text-body)*1.5);
+	--text-h3: calc(var(--text-body)*2);
+	--text-h2: calc(var(--text-body)*3);
+	--text-h1: calc(var(--text-body)*5);
 
 /* Width */
 	--content-width: 65rem;
