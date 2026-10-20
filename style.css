@@ -37,6 +37,5 @@
 body{
 	font-family:var(--body-font);
 	line-height:var(--space-md);
-	
-
+	padding: var(--space-md);
 }
