@@ -1,3 +1,7 @@
 :root{
-	--body-font:
+	--body-font:"archivo"
+	
+}
+body{
+	font-family:var(--body-font)
 }
