@@ -1,5 +1,5 @@
 :root{
-	--body-font:"archivo"
+	--body-font:"archivo";
 
 /* Spacing value system to create a consistent rhythym */
 	--space-sm: 1rem;
@@ -36,5 +36,7 @@
 
 body{
 	font-family:var(--body-font);
+	line-height:var(--space-md);
+	
 
 }
