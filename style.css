@@ -1,6 +1,6 @@
 :root{
---font-heading: "black archivo";
---body-font:"archivo";
+--font-heading: "Archivo Black", sans-serif;
+--body-font:"Archivo", sans-serif;
 
 	--font-heading: var(--heading-font);
 
@@ -30,11 +30,6 @@
 	--color-main:black;
 	--color-accent:rgb(222, 44, 72);
 	--color-accent2:rgb(255, 171, 26);
-
-	--color: var(--color-bg);
-	--color: var(--color-main);
-	--color: var(--color-accent);
-	--color: var(--color-accent2);
 }
 
 body{
@@ -49,7 +44,8 @@ h1{
 	font-family:var(--font-heading);
 	text-transform: lowercase;
 	letter-spacing:calc(var(--space-sm)*-.5) ;
+}
 
-
-
+article p {
+	max-width: var(--text-width);
 }
