@@ -21,7 +21,20 @@
 /* Width */
 	--content-width: 65rem;
 	--text-width: 65ch;
+
+/* Color */
+	--color-bg:white;
+	--color-main:black;
+	--color-accent:rgb(222, 44, 72);
+	--color-accent2:rgb(255, 171, 26);
+
+	--color: var(--color-bg);
+	--color: var(--color-main);
+	--color: var(--color-accent);
+	--color: var(--color-accent2);
 }
+
 body{
-	font-family:var(--body-font)
+	font-family:var(--body-font);
+
 }
