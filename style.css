@@ -87,8 +87,12 @@ article p {
 	width: 40%;
 	text-align: center;
 	color:var(--color-accent);
-
 }
+
+/* MAMMA - match the widths */
+.slashes { letter-spacing: 0.1em;   text-indent: 0.1em; }
+.zigzag  { letter-spacing: -0.1em;  text-indent: -0.1em; }
+.mamma   { letter-spacing: -0.06em; text-indent: -0.06em; }
 
 @media {min-width: 375px;
 }
