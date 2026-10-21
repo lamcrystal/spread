@@ -47,6 +47,7 @@ h1{
 	letter-spacing:calc(var(--space-sm)*-.95);
 	line-height: 3rem;
 	padding-block-end: 3rem;
+	
 }
 
 
