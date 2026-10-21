@@ -97,8 +97,9 @@ p {
 .word-experiment1{
 	font-family:"Permanent Marker";
 	font-size: 3rem;
-	padding-block-start:2rem;
-	padding-block-end:2rem;
+	color:var(--color-accent);
+	padding-block-start:1.5rem;
+	padding-block-end:1.5rem;
 }
 }
 
@@ -118,9 +119,28 @@ p {
 	font-size: 2rem;
 	color:var(--color-accent2);
 	letter-spacing:calc(var(--space-sm)*-.15);
-	padding-block-start:2rem;
-	padding-block-end:2rem;
+	padding-block-start:1.5rem;
+	padding-block-end:1.5rem;
 }
+
+.punctuation{
+	font-family:var(--font-heading);
+	font-size: 1.5rem;
+	color:var(--color-accent2);
+	padding-block-start:1.5rem;
+	padding-block-end:1.5rem;
+}
+
+.punctuation2{
+	font-family:var(--font-heading);
+	font-size: 5rem;
+	color:var(--color-accent2);
+	letter-spacing:calc(var(--space-sm)*.5);
+	padding-block-end: 4rem;
+}
+
+
+
 
 @media {min-width: 375px;
 }
