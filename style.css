@@ -54,6 +54,20 @@ h1{
 }
 
 h2{
+	width: fit-content;
+	color:var(--color-main);
+	font-size: 4.5rem;
+	font-weight: 900;
+	font-family:var(--font-heading);
+	text-transform: lowercase;
+	letter-spacing:calc(var(--space-sm)*-.6);
+	line-height: 4rem;
+	padding-block-end: 1rem;
+	border-block-end: 0.15rem solid black;
+}
+
+
+h3{
 	font-size: 1rem;
 	font-weight: 600;
 	color:var(--color-main);
