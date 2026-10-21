@@ -32,6 +32,8 @@
 	--color-accent2:rgb(255, 171, 26);
 }
 
+/* Base (Mobile) */
+
 body{
 	font-family:var(--body-font);
 	line-height:var(--space-md);
@@ -47,21 +49,13 @@ h1{
 	letter-spacing:calc(var(--space-sm)*-.95);
 	line-height: 5.5rem;
 	padding-block-end: 1rem;
+	border-block-end: 0.15rem solid black;
 
-}
-
-hr {
-	border: none;
-	border-top: 0.15rem solid black;
-	padding-block-end: 1rem;
-	width: 30%;
-	margin: 0rem;
 }
 
 article p {
 	max-width: var(--text-width);
 }
 
-@media screen {
-375px
+@media {min-width: 375px;
 }
