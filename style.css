@@ -2,7 +2,7 @@
 --font-heading: "Archivo Black", sans-serif;
 --body-font:"Archivo", sans-serif;
 
-	--font-heading: var(--heading-font);
+	/*--font-heading: var(--heading-font);
 
 /* Spacing value system to create a consistent rhythym */
 	--space-sm: 1rem;
@@ -47,7 +47,7 @@ h1{
 	font-weight: 900;
 	font-family:var(--font-heading);
 	text-transform: lowercase;
-	letter-spacing:calc(var(--space-sm)*-.95);
+	letter-spacing:calc(var(--space-sm)*-.6);
 	line-height: 5rem;
 	padding-block-end: 1rem;
 	border-block-end: 0.15rem solid black;
@@ -57,7 +57,6 @@ h2{
 	width: fit-content;
 	color:var(--color-main);
 	font-size: 4.5rem;
-	font-weight: 900;
 	font-family:var(--font-heading);
 	text-transform: lowercase;
 	letter-spacing:calc(var(--space-sm)*-.6);
@@ -69,7 +68,6 @@ h2{
 
 h3{
 	font-size: 1rem;
-	font-weight: 600;
 	color:var(--color-main);
 	padding-block-start: 1rem;
 	padding-block-end: 2rem;
@@ -82,7 +80,6 @@ article p {
 .word-experiment{
 	font-family: "Julius Sans One";
 	font-size: 4rem;
-	font-weight: 900;
 	line-height: 4rem;
 	width: 40%;
 	text-align: center;
@@ -93,6 +90,18 @@ article p {
 .slashes { letter-spacing: 0.1em;   text-indent: 0.1em; }
 .zigzag  { letter-spacing: -0.1em;  text-indent: -0.1em; }
 .mamma   { letter-spacing: -0.06em; text-indent: -0.06em; }
+
+.word-experiment2{
+	font-family:var(--font-heading);
+	font-size: 12rem;
+	font-weight: 900;
+	width: 100%;
+	color:var(--color-accent);
+	padding-block-start:6rem;
+	padding-block-end:8rem;
+	letter-spacing:calc(var(--space-lg)*-.5);
+
+}
 
 @media {min-width: 375px;
 }
