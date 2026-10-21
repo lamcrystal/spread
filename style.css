@@ -94,6 +94,14 @@ p {
 .zigzag  { letter-spacing: -0.1em;  text-indent: -0.1em; }
 .mamma   { letter-spacing: -0.06em; text-indent: -0.06em; }
 
+.word-experiment1{
+	font-family:"Permanent Marker";
+	font-size: 3rem;
+	padding-block-start:2rem;
+	padding-block-end:2rem;
+}
+}
+
 .word-experiment2{
 	font-family:var(--font-heading);
 	font-size: 10rem;
