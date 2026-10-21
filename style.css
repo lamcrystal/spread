@@ -79,5 +79,16 @@ article p {
 	max-width: var(--text-width);
 }
 
+.word-experiment{
+	font-family: "Julius Sans One";
+	font-size: 4rem;
+	font-weight: 900;
+	line-height: 4rem;
+	width: 40%;
+	text-align: center;
+	color:var(--color-accent);
+
+}
+
 @media {min-width: 375px;
 }
