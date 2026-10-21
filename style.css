@@ -45,7 +45,7 @@ h1{
 	font-family:var(--font-heading);
 	text-transform: lowercase;
 	letter-spacing:calc(var(--space-sm)*-.95);
-	line-height: 2;
+	line-height: 5.5rem;
 }
 
 article p {
