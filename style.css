@@ -30,7 +30,7 @@
 	--color-main:black;
 	--color-accent:rgb(222, 44, 72);
 	--color-accent2:rgb(255, 171, 26);
-}
+} 
 
 body{
 	font-family:var(--body-font);
