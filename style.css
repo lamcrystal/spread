@@ -42,12 +42,12 @@ body{
 
 h1{
 	color:var(--color-main);
-	font-size:7rem;
+	font-size: 5.5rem;
 	font-weight: 900;
 	font-family:var(--font-heading);
 	text-transform: lowercase;
 	letter-spacing:calc(var(--space-sm)*-.95);
-	line-height: 5.5rem;
+	line-height: 5rem;
 	padding-block-end: 1rem;
 	border-block-end: 0.15rem solid black;
 
