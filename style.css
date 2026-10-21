@@ -147,9 +147,17 @@ p {
 	letter-spacing:calc(var(--space-sm)*-.15);
 	padding-block-start:1.5rem;
 	padding-block-end:1.5rem;
-
 }
 
+.slow2{
+	font-family:var(--font-heading);
+	font-size: 2rem;
+	font-weight: 20;
+	color:var(--color-accent2);
+	letter-spacing:calc(var(--space-md));
+	padding-block-start:1.5rem;
+	padding-block-end:1.5rem;
+}
 
 
 @media {min-width: 375px;
