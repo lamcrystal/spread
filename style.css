@@ -46,11 +46,22 @@ h1{
 	text-transform: lowercase;
 	letter-spacing:calc(var(--space-sm)*-.95);
 	line-height: 5.5rem;
-	padding-block-end: 3rem;
+	padding-block-end: 1rem;
 
 }
 
+hr {
+	border: none;
+	border-top: 0.15rem solid black;
+	padding-block-end: 1rem;
+	width: 30%;
+	margin: 0rem;
+}
 
 article p {
 	max-width: var(--text-width);
+}
+
+@media screen {
+375px
 }
