@@ -46,8 +46,10 @@ h1{
 	font-family:var(--font-heading);
 	text-transform: lowercase;
 	letter-spacing:calc(var(--space-sm)*-.95);
-	line-height: 5.5rem;
+	line-height: 3rem;
+	padding-block-end: 3rem;
 }
+
 
 article p {
 	max-width: var(--text-width);
