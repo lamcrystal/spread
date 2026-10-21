@@ -25,7 +25,6 @@
 	--content-width: 65rem;
 	--text-width: 65ch;
 
-
 /* Color */
 	--color-bg:white;
 	--color-main:black;
@@ -54,8 +53,3 @@ h1{
 article p {
 	max-width: var(--text-width);
 }
-
-@media (min-width:768) {
-
-}
-
