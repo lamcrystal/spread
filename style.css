@@ -60,6 +60,7 @@ h2{
 	text-transform: lowercase;
 	letter-spacing:calc(var(--space-sm)*-.6);
 	line-height: 4rem;
+	padding-block-start: 3rem;
 	padding-block-end: 1rem;
 	border-block-end: 0.15rem solid black;
 }
@@ -101,7 +102,7 @@ p {
 	padding-block-start:1.5rem;
 	padding-block-end:1.5rem;
 }
-}
+
 
 .word-experiment2{
 	font-family:var(--font-heading);
@@ -139,6 +140,15 @@ p {
 	padding-block-end: 4rem;
 }
 
+.slow{
+	font-family:var(--font-heading);
+	font-size: 2rem;
+	color:var(--color-main);
+	letter-spacing:calc(var(--space-sm)*-.15);
+	padding-block-start:1.5rem;
+	padding-block-end:1.5rem;
+
+}
 
 
 
