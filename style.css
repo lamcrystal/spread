@@ -44,7 +44,6 @@ h1{
 	width: fit-content;
 	color:var(--color-main);
 	font-size: 5.5rem;
-	font-weight: 900;
 	font-family:var(--font-heading);
 	text-transform: lowercase;
 	letter-spacing:calc(var(--space-sm)*-.6);
@@ -77,6 +76,10 @@ article p {
 	max-width: var(--text-width);
 }
 
+p {
+
+}
+
 .word-experiment{
 	font-family: "Julius Sans One";
 	font-size: 4rem;
@@ -93,8 +96,7 @@ article p {
 
 .word-experiment2{
 	font-family:var(--font-heading);
-	font-size: 12rem;
-	font-weight: 900;
+	font-size: 10rem;
 	width: 100%;
 	color:var(--color-accent);
 	padding-block-start:6rem;
