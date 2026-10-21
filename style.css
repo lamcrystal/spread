@@ -41,9 +41,10 @@ body{
 h1{
 	color:var(--color-main);
 	font-size:7rem;
+	font-weight: 900;
 	font-family:var(--font-heading);
 	text-transform: lowercase;
-	letter-spacing:calc(var(--space-sm)*-.5);
+	letter-spacing:calc(var(--space-sm)*-.95);
 	line-height: 2;
 }
 
