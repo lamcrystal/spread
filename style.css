@@ -82,7 +82,7 @@ article p {
 }
 
 p {
-
+font-family: var(--font-body);
 }
 
 .word-experiment{
@@ -163,6 +163,11 @@ p {
 	padding-block-end:1.5rem;
 }
 
+nav,
+footer {
+  font-family: var(--font-body);
+  color: var(--color-main);
+}
 
 @media {min-width: 375px;
 }
