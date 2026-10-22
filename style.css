@@ -179,3 +179,9 @@ footer {
   font-family: var(--font-body);
   color: var(--color-main);
 }
+
+@media (max-width: 375px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
