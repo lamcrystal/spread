@@ -166,6 +166,3 @@ footer {
   font-family: var(--font-body);
   color: var(--color-main);
 }
-
-@media {min-width: 375px;
-}
