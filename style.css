@@ -6,19 +6,19 @@
 
 /* Spacing value system to create a consistent rhythym */
 	--space-sm: 1rem;
+	--space-callout: calc(var(--space-sm)*1.5);
 	--space-md: calc(var(--space-sm)*2);
 	--space-lg: calc(var(--space-sm)*3);
 	--space-xl: calc(var(--space-sm)*4);
 
 /* Page layout*/
 	--page-padding: var(--space-md);
-	--section-spacing: var(--space-xl);
 
 /* Text/ type size system */
 	--text-body: 1.2rem;
 	--text-h1: 5.5rem;
 	--text-h2: calc(var(--text-h1)*0.8);
-	--text-h3: calc(var(--text-body)*2);
+	--text-h3: calc(var(--text-body)*1.5);
 	--text-subtitle: calc(var(--text-body)*1.5);
 
 /* Widths */
