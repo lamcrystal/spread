@@ -65,51 +65,51 @@ ol {
 
 
 .item1 {
-  grid-area: item1;
+	grid-area: item1;
 }
 
 .item2 {
-  grid-area: item2;
+	grid-area: item2;
 }
 
 .word-experiment {
-  grid-area: word-experiment;
+	grid-area: word-experiment;
 }
 
 .item4 {
-  grid-area: item4;
+	grid-area: item4;
 }
 
 .word-experiment1 {
-  grid-area: word-experiment1;
+	grid-area: word-experiment1;
 }
 
 .item6 {
-  grid-area: item6;
+	grid-area: item6;
 }
 
 .item7 {
-  grid-area: item7;
+	grid-area: item7;
 }
 
 .item8 {
-  grid-area: item8;
+	grid-area: item8;
 }
 
 .hull {
-  grid-area: hull;
+	grid-area: hull;
 }
 
 .item10 {
-  grid-area: item10;
+	grid-area: item10;
 }
 
 .item11 {
-  grid-area: item11;
+	grid-area: item11;
 }
 
 .item12 {
-  grid-area: item12;
+	grid-area: item12;
 }
 
 
@@ -145,9 +145,10 @@ h1 {
 }
 
 h2 {
-  font-size: var(--text-h2);
-  letter-spacing: -15%;
-  line-height: 4rem;
+	font-size: var(--text-h2);
+	letter-spacing: -15%;
+	line-height: 4rem;
+
 }
 
 
@@ -197,18 +198,19 @@ font-family: var(--font-body);
 	color:var(--color-accent);
 	padding-block-start:1.5rem;
 	padding-block-end:1.5rem;
-	  .overlap {
-    letter-spacing: -0.65em;   /* pulls the M back over the A */
-  }
+		.overlap {
+	letter-spacing: -0.65em;   /* pulls the M back over the A */
+	}
 }
 
 .word-experiment2{
 	font-family:var(--font-heading);
-	font-size: 10rem;
+	font-size: 20rem;
 	width: 100%;
 	color:var(--color-accent);
 	padding-block-start:6rem;
 	padding-block-end:8rem;
+	margin-inline-start: -1.5rem;
 	letter-spacing:calc(var(--space-lg)*-.5);
 
 }
@@ -219,13 +221,14 @@ font-family: var(--font-body);
   line-height: 1.2;
   color: var(--color-accent);
 
+   /* to stack the two words */
   span {
-    display: block;            /* to stack the two words */
+    display: block;
   }
-
+ /* to make the width of HULL match LIVERPOOL */
+	}
   .spread {
-    letter-spacing: 0.9em;     /* to make the width of HULL match LIVERPOOL */
-  }
+	letter-spacing: 0.9em;
 }
 
 .squeeze, .slowword {
@@ -280,40 +283,40 @@ font-family: var(--font-body);
 
 nav,
 footer {
-  font-family: var(--font-body);
-  color: var(--color-main);
+	font-family: var(--font-body);
+	color: var(--color-main);
 }
 
 @media (min-width: 50rem) {
-  /* First section */
-  article ol:nth-of-type(1) {
-    grid-template-columns: 1fr 2fr;
-    grid-template-areas:
-      "item1 item2"
-      "word-experiment item4"
-      "word-experiment1 item6";
-  }
+	/* First section */
+	article ol:nth-of-type(1) {
+	grid-template-columns: 1fr 2fr;
+	grid-template-areas:
+	"item1 item2"
+	"word-experiment item4"
+	"word-experiment1 item6";
+	}
 
-  /* Poems and Telegrams section */
-  article ol:nth-of-type(2) {
-    grid-template-columns: 1fr 2fr;
-    grid-template-areas:
-      "item7 item8"
-      "hull item10";
-  }
+	/* Poems and Telegrams section */
+	article ol:nth-of-type(2) {
+	grid-template-columns: 1fr 2fr;
+	grid-template-areas:
+	"item7 item8"
+	"hull item10";
+	}
 
-  /* Final section */
-  article ol:nth-of-type(3) {
-    grid-template-columns: 1fr 2fr;
-    grid-template-areas:
-      "item11 item12";
-  }
 
-  .item1,
-  .item7,
-  .item11 {
-    display: block;
-  }
+	article ol:nth-of-type(3) {
+	grid-template-columns: 1fr 2fr;
+	grid-template-areas:
+	"item11 item12";
+	}
+
+	.item1,
+	.item7,
+	.item11 {
+	display: block;
+	}
 }
 
 @media (min-width: 50rem) {
