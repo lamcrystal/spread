@@ -302,10 +302,9 @@ letter-spacing: -0.1em;
 /* onecanalsoeliminatethespaces.. */
 .nospace{
 	font-family: var(--font-body);
-	font-size: 3.5rem;
+	font-size: 3rem;
 	color: var(--color-accent);
 	padding-block:3rem;
-	margin-inline-start: 6rem;
 }
 
 nav,
