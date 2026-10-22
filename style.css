@@ -35,7 +35,8 @@
 
 ol {
 	display: grid;
-	grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+	/*grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);*/
+	grid-template-columns:1fr;
 	grid-template-areas:
 		"item1"
 		"item2"
@@ -50,14 +51,62 @@ ol {
 		"item11"
 		"item12";
 
-	column-gap: 1rem;
+	column-gap: 2rem;
 	row-gap: 1rem;
 
 	width: 100%;
-	max-width: 1280px;
+	max-width: 80rem;
 	margin: 0 auto;
 	padding: 0;
 	list-style: none;
+}
+
+.item1 {
+  grid-area: item1;
+}
+
+.item2 {
+  grid-area: item2;
+}
+
+.word-experiment {
+  grid-area: word-experiment;
+}
+
+.item4 {
+  grid-area: item4;
+}
+
+.word-experiment1 {
+  grid-area: word-experiment1;
+}
+
+.item6 {
+  grid-area: item6;
+}
+
+.item7 {
+  grid-area: item7;
+}
+
+.item8 {
+  grid-area: item8;
+}
+
+.hull {
+  grid-area: hull;
+}
+
+.item10 {
+  grid-area: item10;
+}
+
+.item11 {
+  grid-area: item11;
+}
+
+.item12 {
+  grid-area: item12;
 }
 
 
@@ -209,7 +258,24 @@ footer {
   color: var(--color-main);
 }
 
-@media (max-width: 375px) {
+@media (min-width: 50rem) {
+  ol {
+	grid-template-columns: 1fr 2fr;
+	grid-template-areas:
+	"item1 item2"
+	"word-experiment item4"
+	"word-experiment1 item6"
+	"item7 item8"
+	"hull item10"
+	"item11 item12";
+
+	column-gap: 2rem;
+	row-gap: 1rem;
+  }
+
+/*@media (max-width: 375px) {
 	body {
 		padding: 1.25rem;
-	}
+	}*/
+
+
