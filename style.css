@@ -56,7 +56,7 @@ ol {
 	row-gap: 1rem;
 
 	width: 100%;
-	max-width: 95rem;
+	max-width: 80rem;
 	margin: 0 auto;
 	padding: 0;
 	list-style: none;
@@ -238,17 +238,19 @@ font-family: var(--font-body);
 
 .punctuation{
 	font-family:var(--font-heading);
-	font-size: 1.5rem;
+	font-size: 4rem;
+	line-height: 3rem;
 	color:var(--color-accent2);
 	padding-block:1.5rem;
 }
 
 .punctuation2{
 	font-family:var(--font-heading);
-	font-size: 5rem;
+	font-size: 10rem;
 	color:var(--color-accent2);
 	letter-spacing:calc(var(--space-sm)*.5);
-	padding-block-end: 4rem;
+	padding-block-start:4rem;
+	padding-block-end: 10rem;
 }
 
 .slow{
