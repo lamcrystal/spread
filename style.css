@@ -36,8 +36,9 @@
 
 body{
 	font-family:var(--font-body);
+	font-size: var(--text-body);
 	line-height:var(--space-md);
-	padding: var(--space-md);
+	padding: var(--page-padding);
 	background: var(--color-bg);
 	color: var(--color-main);
 }
@@ -49,7 +50,6 @@ article p {
 
 h1,h2 {
 	width: fit-content;
-	color:var(--color-main);
 	font-family: var(--font-heading);
 	text-transform: lowercase;
 	line-height: 5rem;
@@ -68,15 +68,27 @@ h2 {
   letter-spacing: -15%;
 }
 
-nav {
-	padding-block: var(--space-md);
-}
 
 h3{
-	font-size: 1rem;
+	font-size: var(--text-h3);
 	color:var(--color-main);
 	padding-block-start: 1rem;
 	padding-block-end: 2rem;
+}
+
+
+nav {
+	padding-block: var(--space-md);
+
+	a:hover {
+		color: var(--color-accent)
+	}
+}
+
+footer {
+	a:hover {
+		color: var(--color-accent)
+	}
 }
 
 p {
