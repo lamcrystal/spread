@@ -193,10 +193,13 @@ font-family: var(--font-body);
 
 .word-experiment1{
 	font-family:"Permanent Marker";
-	font-size: 3rem;
+	font-size: 7rem;
 	color:var(--color-accent);
 	padding-block-start:1.5rem;
 	padding-block-end:1.5rem;
+	  .overlap {
+    letter-spacing: -0.65em;   /* pulls the M back over the A */
+  }
 }
 
 
