@@ -1,0 +1,252 @@
+:root {
+	--red: #e52d4f;
+	--orange: #f59b23;
+	--black: #050505;
+	--gray: #999;
+}
+
+body {
+	padding: 2rem;
+	font-family: "Archivo", sans-serif;
+	color: var(--black);
+	background: white;
+}
+
+ol {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+	grid-template-areas:
+		"title ."
+		"credit ."
+		". shape-intro"
+		"word paragraph-one"
+		". paragraph-two"
+		". callout"
+		"damo paragraph-three"
+		"bottom bottom";
+
+	column-gap: 4rem;
+	row-gap: 2rem;
+
+	width: 100%;
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+}
+
+li {
+	min-width: 0;
+	margin: 0;
+	padding: 0;
+}
+
+/* Desktop grid placement */
+
+.title {
+	grid-area: title;
+}
+
+.credit {
+	grid-area: credit;
+}
+
+.shape-intro {
+	grid-area: shape-intro;
+}
+
+.word-experiment {
+	grid-area: word;
+}
+
+.paragraph-one {
+	grid-area: paragraph-one;
+}
+
+.paragraph-two {
+	grid-area: paragraph-two;
+}
+
+.callout {
+	grid-area: callout;
+}
+
+.damo {
+	grid-area: damo;
+}
+
+.paragraph-three {
+	grid-area: paragraph-three;
+}
+
+.bottom-mark {
+	grid-area: bottom;
+}
+
+/* Typography */
+
+h1 {
+	margin: 0;
+	font-family: "Archivo Black", sans-serif;
+	font-size: clamp(3rem, 6vw, 5.5rem);
+	line-height: 0.82;
+	letter-spacing: -0.08em;
+}
+
+h2 {
+	margin: 0.8rem 0;
+	font-family: "Archivo Black", sans-serif;
+	font-size: clamp(1.8rem, 3vw, 3rem);
+	line-height: 0.9;
+	letter-spacing: -0.08em;
+}
+
+p {
+	margin: 0 0 1rem;
+	font-size: 0.75rem;
+	line-height: 1.4;
+}
+
+strong {
+	font-weight: 700;
+}
+
+/* Lines */
+
+.title {
+	border-bottom: 1px solid var(--gray);
+	padding-bottom: 1rem;
+}
+
+.shape-intro {
+	border-top: 1px solid var(--gray);
+	border-bottom: 1px solid var(--gray);
+	padding: 1.5rem 0;
+}
+
+/* Word experiment */
+
+.word-experiment {
+	align-self: start;
+	padding-top: 1rem;
+}
+
+.word-experiment p {
+	margin: 0;
+	font-family: "Julius Sans One", sans-serif;
+	font-size: clamp(2.5rem, 5vw, 4.5rem);
+	line-height: 1.1;
+	text-align: center;
+	color: var(--red);
+}
+
+.word-experiment span {
+	display: block;
+}
+
+.slashes {
+	letter-spacing: 0.1em;
+}
+
+.zigzag {
+	letter-spacing: -0.1em;
+}
+
+.mamma {
+	letter-spacing: -0.06em;
+}
+
+/* Orange text */
+
+.callout h2 {
+	font-family: "Archivo", sans-serif;
+	font-size: 1.15rem;
+	font-weight: 700;
+	letter-spacing: -0.05em;
+	color: var(--orange);
+}
+
+/* DAMO */
+
+.damo {
+	align-self: center;
+}
+
+.damo p {
+	font-family: "Permanent Marker", cursive;
+	font-size: clamp(2rem, 4vw, 4rem);
+	color: var(--red);
+	transform: rotate(-4deg);
+}
+
+/* Bottom graphic */
+
+.bottom-mark {
+	overflow: hidden;
+	height: 8rem;
+}
+
+.bottom-mark p {
+	margin: 0;
+	font-family: "Archivo Black", sans-serif;
+	font-size: 16rem;
+	line-height: 0.45;
+	letter-spacing: -0.2em;
+	color: var(--red);
+}
+
+/* Mobile layout */
+
+@media (max-width: 700px) {
+	body {
+		padding: 1.25rem;
+	}
+
+	ol {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			"title"
+			"credit"
+			"shape-intro"
+			"paragraph-one"
+			"word"
+			"paragraph-two"
+			"callout"
+			"damo"
+			"paragraph-three"
+			"bottom";
+
+		gap: 2rem;
+	}
+
+	.title {
+		max-width: 18rem;
+	}
+
+	.shape-intro {
+		margin-top: 1rem;
+	}
+
+	.word-experiment {
+		padding-top: 0;
+	}
+
+	.word-experiment p {
+		font-size: 3.5rem;
+	}
+
+	.damo {
+		text-align: center;
+	}
+
+	.bottom-mark {
+		height: 5rem;
+		margin-left: -1.25rem;
+		margin-right: -1.25rem;
+	}
+
+	.bottom-mark p {
+		font-size: 10rem;
+	}
+}
