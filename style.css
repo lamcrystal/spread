@@ -178,6 +178,28 @@ p {
 font-family: var(--font-body);
 }
 
+.item2{
+	width: fit-content;
+	border-block-start: 0.15rem solid var(--color-main);
+	border-block-end: 0.15rem solid var(--color-main);
+	padding-block: 1rem;
+}
+
+/* Shape */
+.shape-spaced, .shape-bold{
+	font-family: var(--font-heading);
+	font-size: var(--space-md);
+}
+
+.shape-spaced{
+letter-spacing: 1em;
+}
+
+.shape-bold{
+letter-spacing: -0.1em;
+}
+
+/* MAMMA */
 .word-experiment{
 	font-family: "Julius Sans One";
 	font-size: 4rem;
@@ -192,6 +214,7 @@ font-family: var(--font-body);
 .zigzag  { letter-spacing: -0.1em;  text-indent: -0.1em; }
 .mamma   { letter-spacing: -0.06em; text-indent: -0.06em; }
 
+/* DAMO */
 .word-experiment1{
 	font-family:"Permanent Marker";
 	font-size: 7rem;
@@ -203,18 +226,20 @@ font-family: var(--font-body);
 	}
 }
 
+/* Jazz */
 .word-experiment2{
 	font-family:var(--font-heading);
 	font-size: 20rem;
 	width: 100%;
 	color:var(--color-accent);
 	padding-block-start:6rem;
-	padding-block-end:8rem;
+	padding-block-end:10rem;
 	margin-inline-start: -1.5rem;
 	letter-spacing:calc(var(--space-lg)*-.5);
 
 }
 
+/* HULL and LIVERPOOL */
 .hull {
   font-family: "Julius Sans One", sans-serif;
   font-size: 3rem;
@@ -231,6 +256,7 @@ font-family: var(--font-body);
 	letter-spacing: 0.9em;
 }
 
+/* pushtheseclosetogether and slooooowly */
 .squeeze, .slowword {
 	font-family:var(--font-heading);
 	font-size: 2rem;
