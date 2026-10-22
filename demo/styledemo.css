@@ -197,7 +197,7 @@ strong {
 
 /* Mobile layout */
 
-@media (max-width: 700px) {
+@media (max-width: 375px) {
 	body {
 		padding: 1.25rem;
 	}
@@ -217,7 +217,7 @@ strong {
 			"paragraph-three"
 			"bottom";
 
-		gap: 2rem;
+		gap: 1rem;
 	}
 
 	.title {
