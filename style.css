@@ -173,6 +173,15 @@ font-family: var(--font-body);
 	padding-block-end:1.5rem;
 }
 
+.slowword{
+font-family:var(--font-heading);
+	font-size: 2rem;
+	color:var(--color-accent2);
+	letter-spacing:calc(var(--space-sm)*-.15);
+	padding-block-start:1.5rem;
+	padding-block-end:1.5rem;
+}
+
 nav,
 footer {
   font-family: var(--font-body);
