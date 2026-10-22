@@ -52,7 +52,6 @@ h1,h2 {
 	width: fit-content;
 	font-family: var(--font-heading);
 	text-transform: lowercase;
-	line-height: 5rem;
 	padding-block-end: var(--space-sm);
 	padding-block-start: var(--space-lg);
 	border-block-end: 0.15rem solid var(--color-main);
@@ -61,11 +60,13 @@ h1,h2 {
 h1 {
 	font-size: var(--text-h1);
 	letter-spacing: -10%;
+	line-height: 5rem;
 }
 
 h2 {
   font-size: var(--text-h2);
   letter-spacing: -15%;
+  line-height: 4rem;
 }
 
 
