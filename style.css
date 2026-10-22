@@ -16,7 +16,7 @@
 
 /* Text/ type size system */
 	--text-body: 1.2rem;
-	--text-h1: 5.5rem;
+	--text-h1: 6rem;
 	--text-h2: calc(var(--text-h1)*0.8);
 	--text-h3: calc(var(--text-body)*1.5);
 	--text-subtitle: calc(var(--text-body)*1.5);
@@ -229,7 +229,7 @@ letter-spacing: -0.1em;
 /* Jazz */
 .word-experiment2{
 	font-family:var(--font-heading);
-	font-size: 20rem;
+	font-size: 16rem;
 	width: 100%;
 	color:var(--color-accent);
 	padding-block-start:6rem;
