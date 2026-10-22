@@ -202,7 +202,6 @@ font-family: var(--font-body);
   }
 }
 
-
 .word-experiment2{
 	font-family:var(--font-heading);
 	font-size: 10rem;
@@ -214,21 +213,34 @@ font-family: var(--font-body);
 
 }
 
+.hull {
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 3rem;
+  line-height: 1.2;
+  color: var(--color-accent);
+
+  span {
+    display: block;            /* to stack the two words */
+  }
+
+  .spread {
+    letter-spacing: 0.9em;     /* to make the width of HULL match LIVERPOOL */
+  }
+}
+
 .squeeze, .slowword {
 	font-family:var(--font-heading);
 	font-size: 2rem;
 	color:var(--color-accent2);
-	letter-spacing:calc(var(--space-sm)*-.15);
-	padding-block-start:1.5rem;
-	padding-block-end:1.5rem;
+	letter-spacing:calc(var(--space-sm)*-.2);
+	padding-block:1.5rem;
 }
 
 .punctuation{
 	font-family:var(--font-heading);
 	font-size: 1.5rem;
 	color:var(--color-accent2);
-	padding-block-start:1.5rem;
-	padding-block-end:1.5rem;
+	padding-block:1.5rem;
 }
 
 .punctuation2{
@@ -244,8 +256,7 @@ font-family: var(--font-body);
 	font-size: 2rem;
 	color:var(--color-main);
 	letter-spacing:calc(var(--space-sm)*-.15);
-	padding-block-start:1.5rem;
-	padding-block-end:1.5rem;
+	padding-block:1.5rem;
 }
 
 .slow2{
@@ -254,8 +265,15 @@ font-family: var(--font-body);
 	font-weight: 20;
 	color:var(--color-accent2);
 	letter-spacing:calc(var(--space-md));
-	padding-block-start:1.5rem;
-	padding-block-end:1.5rem;
+	padding-block:1.5rem;
+}
+
+.nospace{
+	font-family: var(--font-body);
+	font-size: 3.5rem;
+	color: var(--color-accent);
+	text-align: center;
+	padding-block:1.5rem;
 }
 
 nav,
