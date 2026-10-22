@@ -35,19 +35,11 @@
 
 ol {
 	display: grid;
-	/*grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);*/
+	grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);*/
 	grid-template-columns:1fr;
 	grid-template-areas:
-	"item2"
-	"word-experiment"
-"item4"
-"word-experiment1"
-"item6"
-"item8"
-"hull"
-"item10"
-"item12";
-		/* "item1"
+
+		"item1"
 		"item2"
 		"word-experiment"
 		"item4"
@@ -58,7 +50,7 @@ ol {
 		"hull"
 		"item10"
 		"item11"
-		"item12"; */
+		"item12";
 
 	column-gap: 2rem;
 	row-gap: 1rem;
@@ -69,6 +61,8 @@ ol {
 	padding: 0;
 	list-style: none;
 }
+
+
 
 .item1 {
   grid-area: item1;
@@ -268,47 +262,38 @@ footer {
 }
 
 @media (min-width: 50rem) {
-  /* Show the blank spacer items again on desktop */
-  .item1,
-  .item7,
-  .item11 {
-    display: block;
-  }
-
-  /* First ol */
+  /* First section */
   article ol:nth-of-type(1) {
     grid-template-columns: 1fr 2fr;
     grid-template-areas:
       "item1 item2"
       "word-experiment item4"
       "word-experiment1 item6";
-
-    column-gap: 2rem;
-    row-gap: 1rem;
   }
 
-  /* Second ol */
+  /* Poems and Telegrams section */
   article ol:nth-of-type(2) {
     grid-template-columns: 1fr 2fr;
     grid-template-areas:
       "item7 item8"
       "hull item10";
-
-    column-gap: 2rem;
-    row-gap: 1rem;
   }
 
-  /* Third ol */
+  /* Final section */
   article ol:nth-of-type(3) {
     grid-template-columns: 1fr 2fr;
     grid-template-areas:
       "item11 item12";
+  }
 
-    column-gap: 2rem;
-    row-gap: 1rem;
+  .item1,
+  .item7,
+  .item11 {
+    display: block;
   }
 }
-/* @media (min-width: 50rem) {
+
+@media (min-width: 50rem) {
   ol {
 	grid-template-columns: 1fr 2fr;
 	grid-template-areas:
@@ -322,7 +307,7 @@ footer {
 	column-gap: 2rem;
 	row-gap: 1rem;
   }
-} */
+}
 /*@media (max-width: 375px) {
 	body {
 		padding: 1.25rem;
