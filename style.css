@@ -1,6 +1,6 @@
 :root{
 --font-heading: "Archivo Black", sans-serif;
---body-font:"Archivo", sans-serif;
+--font-body:"Archivo", sans-serif;
 
 	/*--font-heading: var(--heading-font);
 
@@ -11,7 +11,7 @@
 	--space-xl: calc(var(--space-sm)*4);
 
 /* Page layout*/
-	--page-padding: var(--space-lg);
+	--page-padding: var(--space-md);
 	--section-spacing: var(--space-xl);
 
 /* Text/ type size system */
@@ -21,7 +21,7 @@
 	--text-h3: calc(var(--text-body)*2);
 	--text-subtitle: calc(var(--text-body)*1.5);
 
-/* Width */
+/* Widths */
 	--content-width: 65rem;
 	--text-width: 65ch;
 
@@ -50,6 +50,10 @@ h1{
 	line-height: 5rem;
 	padding-block-end: 1rem;
 	border-block-end: 0.15rem solid black;
+}
+
+nav {
+	padding-block: var(--space-md);
 }
 
 h2{
