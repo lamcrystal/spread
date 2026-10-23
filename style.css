@@ -59,7 +59,6 @@ article p {
 	max-inline-size: var(--text-width);
 }
 
-
 /* Headings */
 
 h1,h2 {
@@ -87,7 +86,6 @@ h3{
 	padding-block-start: var(--space-sm);
 	padding-block-end: var(--space-md);
 }
-
 
 /* Grid (movile one column, stacks everything in order, the desktop will shift word experiments to the left column*/
 ol {
@@ -152,8 +150,8 @@ a{
 }
 
 footer {
-	a:hover {
-		color: var(--color-accent);
+	display: flex;
+	justify-content: center;
 	}
 }
 
