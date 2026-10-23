@@ -18,7 +18,7 @@
 	--text-callout: clamp(calc(var(--text-body) * 1.5), 6vw, calc(var(--text-body) * 2));
 	--text-display: clamp(calc(var(--text-body) * 2), 12vw, calc(var(--text-body) * 3.5));
 	--text-giant: clamp(calc(var(--text-body) * 6), 45vw, calc(var(--text-body) * 16));
-	--text-h1: clamp(calc(var(--text-body)*3),21vw, calc(var(--text-body)*13));
+	--text-h1: clamp(calc(var(--text-body)*3), 35vw, calc(var(--text-body)*13));
 	--text-h2: calc(var(--text-h1)*0.8);
 	--text-h3: calc(var(--text-body)*1.5);
 
@@ -124,12 +124,26 @@ h3{
 
 
 nav {
+	position: sticky;
+	top: 0;
+	display: flex;
+	justify-content: center; /*maybe we can make it right justified? we will come back to this*/
+	gap: var(--space-sm);
+	background: var(--color-accent2);
 	padding-block: var(--space-md);
 }
 
-nav a:hover,footer {
+a{
+	color: var(--color-accent);
+}
+
+a:hover {
+	color:var(--color-bg);
+}
+
+footer {
 	a:hover {
-		color: var(--color-accent)
+		color: var(--color-accent);
 	}
 }
 
