@@ -10,11 +10,11 @@
 	--space-md: calc(var(--space-sm)*2);
 	--space-lg: calc(var(--space-sm)*3);
 	--space-xl: calc(var(--space-sm)*4);
-	--page-padding: clamp (var(--space-sm), 4vw, var(--space-md));
+	--page-padding: clamp(var(--space-sm), 4vw, var(--space-md));
 
 /* Text/ type size system */
-	--text-body: 1.2rem;
-	--text-h1: 8rem;
+	--text-body: clamp(1rem, 0.85rem + 0.5vw, 1.2rem);
+	--text-h1: clamp(calc(var(--text-body)*3),21vw, calc(var(--text-body)*13));
 	--text-h2: calc(var(--text-h1)*0.8);
 	--text-h3: calc(var(--text-body)*1.5);
 	--text-subtitle: calc(var(--text-body)*1.5);
