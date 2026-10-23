@@ -148,6 +148,11 @@ footer {
 	}
 }
 
+article a {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
 p {
 font-family: var(--font-body);
 }
