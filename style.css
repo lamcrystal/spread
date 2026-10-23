@@ -2,7 +2,7 @@
 --font-heading: "Archivo Black", sans-serif;
 --font-body:"Archivo", sans-serif;
 --font-accent: "Julius Sans One", sans-serif;
---font-marker: "Permanent Marker", sans-serif
+--font-marker: "Permanent Marker", sans-serif;
 
 /* Spacing value system to create a consistent rhythym */
 	--space-sm: 1rem;
@@ -30,8 +30,7 @@
 	--color-main:black;
 	--color-accent:rgb(222, 44, 72);
 	--color-accent2:rgb(255, 171, 26);
-	--line: 0.1rem solid var(--color-main)
-}
+	--line: 0.1rem solid var(--color-main);
 
 /* Desktop (the word experiments) will shift to the left from the stacked mobile position*/
 @media (width > 500px) {
@@ -42,7 +41,46 @@
 /* Grid (movile one column, stacks everything in order, the desktop will shift word experiments to the left column*/
 ol {
 	display: grid;
-	grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+	row-gap: var(--space-lg);
+
+	@media (width > 500px) {
+	grid-template-columns: 1fr, 1fr;
+	grid-template-columns:1fr;
+	grid-template-areas:
+	}
+}
+
+.item1, .item7, .item11 {
+	display: none;
+	@media (width > 500px) { display: block; }
+}
+
+@media (width > 500px) {
+  article ol:nth-of-type(1) {
+    grid-template-areas:
+      "item1            item2"
+      "word-experiment  item4"
+      "word-experiment1 item6";
+  }
+  article ol:nth-of-type(2) {
+    grid-template-areas:
+      "item7 item8"
+      "hull  item10";
+  }
+  article ol:nth-of-type(3) {
+    grid-template-areas: "item11 item12";
+  }
+
+  .item1  { grid-area: item1; }   .item2  { grid-area: item2; }
+  .item4  { grid-area: item4; }   .item6  { grid-area: item6; }
+  .item7  { grid-area: item7; }   .item8  { grid-area: item8; }
+  .item10 { grid-area: item10; }  .item11 { grid-area: item11; }
+  .item12 { grid-area: item12; }  .hull   { grid-area: hull; }
+  .word-experiment  { grid-area: word-experiment; }
+  .word-experiment1 { grid-area: word-experiment1; }
+}
+
+	/* grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
 	grid-template-columns:1fr;
 	grid-template-areas:
 
@@ -67,9 +105,6 @@ ol {
 	margin: 0 auto;
 	padding: 0;
 	list-style: none;
-}
-
-
 
 .item1 {
 	grid-area: item1;
@@ -118,7 +153,7 @@ ol {
 .item12 {
 	grid-area: item12;
 }
-
+*/
 
 /* Base (Mobile) */
 
