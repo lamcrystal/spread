@@ -23,6 +23,7 @@
 	--text-h3: calc(var(--text-body)*1.5);
 
 /* Width */
+	--page-width: 80rem;
 	--text-width: 50ch;
 
 /* Color */
@@ -30,6 +31,8 @@
 	--color-main:black;
 	--color-accent:rgb(222, 44, 72);
 	--color-accent2:rgb(255, 171, 26);
+
+/* Line */
 	--line: 0.1rem solid var(--color-main);
 
 /* Desktop (the word experiments) will shift to the left from the stacked mobile position*/
@@ -39,62 +42,25 @@
 }
 }
 
-/* Grid (movile one column, stacks everything in order, the desktop will shift word experiments to the left column*/
-ol {
-	display: grid;
-	row-gap: var(--space-lg);
-
-	@media (width > 500px) {
-	grid-template-columns: 1fr, 1fr;
-	grid-template-columns:1fr;
-	grid-template-areas:
-	}
-}
-
-.item1, .item7, .item11 {
-	display: none;
-	@media (width > 500px) { display: block; }
-}
-
-@media (width > 500px) {
-  article ol:nth-of-type(1) {
-    grid-template-areas:
-      "item1            item2"
-      "word-experiment  item4"
-      "word-experiment1 item6";
-  }
-  article ol:nth-of-type(2) {
-    grid-template-areas:
-      "item7 item8"
-      "hull  item10";
-  }
-  article ol:nth-of-type(3) {
-    grid-template-areas: "item11 item12";
-  }
-
-  .item1  { grid-area: item1; }   .item2  { grid-area: item2; }
-  .item4  { grid-area: item4; }   .item6  { grid-area: item6; }
-  .item7  { grid-area: item7; }   .item8  { grid-area: item8; }
-  .item10 { grid-area: item10; }  .item11 { grid-area: item11; }
-  .item12 { grid-area: item12; }  .hull   { grid-area: hull; }
-  .word-experiment  { grid-area: word-experiment; }
-  .word-experiment1 { grid-area: word-experiment1; }
-}
-
 /* Base (Mobile) */
 
 body{
+	max-inline-size: var(--page-width);
+	margin-inline: auto;
+	padding: var(--page-padding);
 	font-family:var(--font-body);
 	font-size: var(--text-body);
 	line-height: 1.5;
-	padding: var(--page-padding);
 	background: var(--color-bg);
 	color: var(--color-main);
 }
 
 article p {
-	max-width: var(--text-width);
+	max-inline-size: var(--text-width);
 }
+
+
+/* Headings */
 
 h1,h2 {
 	width: fit-content;
@@ -123,15 +89,58 @@ h3{
 }
 
 
+/* Grid (movile one column, stacks everything in order, the desktop will shift word experiments to the left column*/
+ol {
+	display: grid;
+	row-gap: var(--space-lg);
+
+	@media (width > 500px) {
+	grid-template-columns: 1fr, 1fr;
+	grid-template-columns:1fr;
+	grid-template-areas:
+	}
+}
+
+.item1, .item7, .item11 {
+	display: none;
+	@media (width > 500px) { display: block; }
+}
+
+@media (width > 500px) {
+  article ol:nth-of-type(1) {
+    grid-template-areas:
+      "item1 item2"
+      "word-experiment item4"
+      "word-experiment1 item6";
+  }
+  article ol:nth-of-type(2) {
+    grid-template-areas:
+      "item7 item8"
+      "hull  item10";
+  }
+  article ol:nth-of-type(3) {
+    grid-template-areas: "item11 item12";
+  }
+
+  .item1  { grid-area: item1; }   .item2  { grid-area: item2; }
+  .item4  { grid-area: item4; }   .item6  { grid-area: item6; }
+  .item7  { grid-area: item7; }   .item8  { grid-area: item8; }
+  .item10 { grid-area: item10; }  .item11 { grid-area: item11; }
+  .item12 { grid-area: item12; }  .hull   { grid-area: hull; }
+  .word-experiment  { grid-area: word-experiment; }
+  .word-experiment1 { grid-area: word-experiment1; }
+}
+
 nav {
 	position: sticky;
 	top: 0;
 	/*to make it stay at the top of page but everything else scrollable*/
 	z-index: 1;
 	display: flex;
-	justify-content: center; /*maybe we can make it right justified? we will come back to this*/
+	/* to right align the nav */
+	justify-content: center;
 	gap: var(--space-sm);
-	background: var(--color-accent2);
+	background: var(--color-bg);
 	padding-block: var(--space-md);
 
 a{
@@ -280,13 +289,13 @@ letter-spacing: -0.1em;
 /*onecanalsoeliminatethespacesbetweenthewords:*/
 .nospace{
 	font-family: var(--font-body);
-	font-size: 3rem;
+	font-size: clamp(2rem, 10vw, 3rem);
 	color: var(--color-accent);
-	padding-block:3rem;
+	padding-block: var(--space-lg);
 }
 
 @media (min-width: 50rem) {
-	/* First section */
+	/* First grid section */
 	article ol:nth-of-type(1) {
 	grid-template-columns: 1fr 2fr;
 	grid-template-areas:
@@ -302,8 +311,7 @@ letter-spacing: -0.1em;
 	"item7 item8"
 	"hull item10";
 	}
-
-
+	/* after onecanalsoeliminate... */
 	article ol:nth-of-type(3) {
 	grid-template-columns: 1fr 2fr;
 	grid-template-areas:
