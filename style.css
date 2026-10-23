@@ -37,6 +37,7 @@
     --text-display: clamp(calc(var(--text-body) * 2), 5vw, calc(var(--text-body) * 3.5));
     --text-h1: clamp(calc(var(--text-body) * 3.5), 11vw, calc(var(--text-body) * 10));
 }
+}
 
 /* Grid (movile one column, stacks everything in order, the desktop will shift word experiments to the left column*/
 ol {
@@ -80,92 +81,16 @@ ol {
   .word-experiment1 { grid-area: word-experiment1; }
 }
 
-	/* grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-	grid-template-columns:1fr;
-	grid-template-areas:
-
-		"item1"
-		"item2"
-		"word-experiment"
-		"item4"
-		"word-experiment1"
-		"item6"
-		"item7"
-		"item8"
-		"hull"
-		"item10"
-		"item11"
-		"item12";
-
-	column-gap: 2rem;
-	row-gap: 1rem;
-
-	width: 100%;
-	max-width: 80rem;
-	margin: 0 auto;
-	padding: 0;
-	list-style: none;
-
-.item1 {
-	grid-area: item1;
-}
-
-.item2 {
-	grid-area: item2;
-}
-
-.word-experiment {
-	grid-area: word-experiment;
-}
-
-.item4 {
-	grid-area: item4;
-}
-
-.word-experiment1 {
-	grid-area: word-experiment1;
-}
-
-.item6 {
-	grid-area: item6;
-}
-
-.item7 {
-	grid-area: item7;
-}
-
-.item8 {
-	grid-area: item8;
-}
-
-.hull {
-	grid-area: hull;
-}
-
-.item10 {
-	grid-area: item10;
-}
-
-.item11 {
-	grid-area: item11;
-}
-
-.item12 {
-	grid-area: item12;
-}
-*/
-
 /* Base (Mobile) */
 
 body{
 	font-family:var(--font-body);
 	font-size: var(--text-body);
-	line-height:var(--space-md);
+	line-height: 1.5;
 	padding: var(--page-padding);
 	background: var(--color-bg);
 	color: var(--color-main);
 }
-
 
 article p {
 	max-width: var(--text-width);
@@ -175,6 +100,7 @@ h1,h2 {
 	width: fit-content;
 	font-family: var(--font-heading);
 	text-transform: lowercase;
+	line-height: 0.85;
 	padding-block-end: var(--space-sm);
 	padding-block-start: var(--space-lg);
 	border-block-end: 0.15rem solid var(--color-main);
@@ -182,35 +108,26 @@ h1,h2 {
 
 h1 {
 	font-size: var(--text-h1);
-	letter-spacing: -10%;
-	line-height: 7rem;
+	letter-spacing: -0.1em;
 }
 
 h2 {
 	font-size: var(--text-h2);
-	letter-spacing: -15%;
-	line-height: 4rem;
-
+	letter-spacing: -0.15em;
 }
-
 
 h3{
 	font-size: var(--text-h3);
-	color:var(--color-main);
-	padding-block-start: 1rem;
-	padding-block-end: 2rem;
+	padding-block-start: var(--space-sm);
+	padding-block-end: var(--space-md);
 }
 
 
 nav {
 	padding-block: var(--space-md);
-
-	a:hover {
-		color: var(--color-accent)
-	}
 }
 
-footer {
+nav a:hover,footer {
 	a:hover {
 		color: var(--color-accent)
 	}
