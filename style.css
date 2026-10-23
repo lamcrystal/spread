@@ -138,7 +138,6 @@ nav {
 	/* to right align the nav */
 	justify-content: center;
 	gap: var(--space-sm);
-	background: var(--color-bg);
 	padding-block: var(--space-md);
 
 a{
@@ -146,6 +145,7 @@ a{
 	padding-inline: 0.8em;
 	border: 0.15rem solid var(--color-accent2);
 	color: var(--color-accent);
+	background: var(--color-bg);
 }
 }
 
