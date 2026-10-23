@@ -1,8 +1,8 @@
 :root{
 --font-heading: "Archivo Black", sans-serif;
 --font-body:"Archivo", sans-serif;
-
-	/*--font-heading: var(--heading-font);
+--font-accent: "Julies Sans One", sans-serif;
+--font-marker: "Permanent Marker", sans-serif
 
 /* Spacing value system to create a consistent rhythym */
 	--space-sm: 1rem;
@@ -10,19 +10,16 @@
 	--space-md: calc(var(--space-sm)*2);
 	--space-lg: calc(var(--space-sm)*3);
 	--space-xl: calc(var(--space-sm)*4);
-
-/* Page layout*/
-	--page-padding: var(--space-md);
+	--page-padding: var(--space-sm);
 
 /* Text/ type size system */
 	--text-body: 1.2rem;
-	--text-h1: 6rem;
+	--text-h1: 10rem;
 	--text-h2: calc(var(--text-h1)*0.8);
 	--text-h3: calc(var(--text-body)*1.5);
 	--text-subtitle: calc(var(--text-body)*1.5);
 
-/* Widths */
-	--content-width: 65rem;
+/* Width */
 	--text-width: 65ch;
 
 /* Color */
@@ -31,6 +28,7 @@
 	--color-accent:rgb(222, 44, 72);
 	--color-accent2:rgb(255, 171, 26);
 }
+
 
 
 ol {
@@ -141,7 +139,7 @@ h1,h2 {
 h1 {
 	font-size: var(--text-h1);
 	letter-spacing: -10%;
-	line-height: 5rem;
+	line-height: 9rem;
 }
 
 h2 {
@@ -299,7 +297,7 @@ letter-spacing: -0.1em;
 	padding-block:1.5rem;
 }
 
-/* onecanalsoeliminatethespaces.. */
+/*onecanalsoeliminatethespacesbetweenthewords:*/
 .nospace{
 	font-family: var(--font-body);
 	font-size: 3rem;
