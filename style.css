@@ -1,7 +1,7 @@
 :root{
 --font-heading: "Archivo Black", sans-serif;
 --font-body:"Archivo", sans-serif;
---font-accent: "Julies Sans One", sans-serif;
+--font-accent: "Julius Sans One", sans-serif;
 --font-marker: "Permanent Marker", sans-serif
 
 /* Spacing value system to create a consistent rhythym */
@@ -14,23 +14,32 @@
 
 /* Text/ type size system */
 	--text-body: clamp(1rem, 0.85rem + 0.5vw, 1.2rem);
+	--text-small: calc(var(--text-body) * 0.85);
+	--text-callout: clamp(calc(var(--text-body) * 1.5), 6vw, calc(var(--text-body) * 2));
+	--text-display: clamp(calc(var(--text-body) * 2), 12vw, calc(var(--text-body) * 3.5));
+	--text-giant: clamp(calc(var(--text-body) * 6), 45vw, calc(var(--text-body) * 16));
 	--text-h1: clamp(calc(var(--text-body)*3),21vw, calc(var(--text-body)*13));
 	--text-h2: calc(var(--text-h1)*0.8);
 	--text-h3: calc(var(--text-body)*1.5);
-	--text-subtitle: calc(var(--text-body)*1.5);
 
 /* Width */
-	--text-width: 65ch;
+	--text-width: 50ch;
 
 /* Color */
 	--color-bg:white;
 	--color-main:black;
 	--color-accent:rgb(222, 44, 72);
 	--color-accent2:rgb(255, 171, 26);
+	--line: 0.1rem solid var(--color-main)
 }
 
+/* Desktop (the word experiments) will shift to the left from the stacked mobile position*/
+@media (width > 500px) {
+    --text-display: clamp(calc(var(--text-body) * 2), 5vw, calc(var(--text-body) * 3.5));
+    --text-h1: clamp(calc(var(--text-body) * 3.5), 11vw, calc(var(--text-body) * 10));
+}
 
-
+/* Grid (movile one column, stacks everything in order, the desktop will shift word experiments to the left column*/
 ol {
 	display: grid;
 	grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
