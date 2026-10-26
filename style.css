@@ -153,7 +153,6 @@ footer {
 	display: flex;
 	justify-content: center;
 	}
-}
 
 article a {
   color: var(--color-accent);
@@ -215,11 +214,9 @@ letter-spacing: -0.1em;
 /* Jazz */
 .word-experiment2{
 	font-family:var(--font-heading);
-	font-size: clamp(4rem,100vw,20rem);
-	width: 100%;
+	font-size: clamp(4rem,40vw,20rem);
 	color:var(--color-accent);
-	padding-block-start:6rem;
-	padding-block-end:10rem;
+	padding-block:var(--space-xl);
 	margin-inline-start: -1.5rem;
 	letter-spacing:calc(var(--space-lg)*-.5);
 }
@@ -316,9 +313,7 @@ letter-spacing: -0.1em;
 	"item11 item12";
 	}
 
-	.item1,
-	.item7,
-	.item11 {
+	.item1, .item7, .item11 {
 	display: block;
 	}
 }
