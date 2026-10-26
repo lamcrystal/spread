@@ -215,7 +215,7 @@ letter-spacing: -0.1em;
 /* Jazz */
 .word-experiment2{
 	font-family:var(--font-heading);
-	font-size: clamp(4rem,25vw,20rem);
+	font-size: clamp(4rem,100vw,20rem);
 	width: 100%;
 	color:var(--color-accent);
 	padding-block-start:6rem;
@@ -295,7 +295,7 @@ letter-spacing: -0.1em;
 @media (min-width: 50rem) {
 	/* First grid section */
 	article ol:nth-of-type(1) {
-	grid-template-columns: 1fr 2fr;
+	grid-template-columns: 1fr 1fr;
 	grid-template-areas:
 	"item1 item2"
 	"word-experiment item4"
@@ -304,14 +304,14 @@ letter-spacing: -0.1em;
 
 	/* Poems and Telegrams section */
 	article ol:nth-of-type(2) {
-	grid-template-columns: 1fr 2fr;
+	grid-template-columns: 1fr 1fr;
 	grid-template-areas:
 	"item7 item8"
 	"hull item10";
 	}
 	/* after onecanalsoeliminate... */
 	article ol:nth-of-type(3) {
-	grid-template-columns: 1fr 2fr;
+	grid-template-columns: 1fr 1fr;
 	grid-template-areas:
 	"item11 item12";
 	}
@@ -325,7 +325,7 @@ letter-spacing: -0.1em;
 
 @media (min-width: 50rem) {
   ol {
-	grid-template-columns: 1fr 2fr;
+	grid-template-columns: 1fr 1fr;
 	grid-template-areas:
 	"item1 item2"
 	"word-experiment item4"
