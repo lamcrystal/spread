@@ -338,3 +338,5 @@ letter-spacing: -0.1em;
 	row-gap: 1rem;
   }
 }
+
+nobr { white-space: nowrap; }
