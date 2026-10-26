@@ -215,7 +215,7 @@ letter-spacing: -0.1em;
 /* Jazz */
 .word-experiment2{
 	font-family:var(--font-heading);
-	font-size: 16rem;
+	font-size: clamp(4rem,25vw,20rem);
 	width: 100%;
 	color:var(--color-accent);
 	padding-block-start:6rem;
