@@ -161,7 +161,7 @@ ol {
 	}
 }
 
-.item1, .item7, .item11 {
+.item1, .item7, .item11{
 	display: none;
 	@media (width > 700px) { display: block; }
 }
@@ -293,7 +293,7 @@ letter-spacing: -0.1em;
 
 .punctuation2{
 	font-family:var(--font-heading);
-	font-size: 10rem;
+	font-size: 8rem;
 	color:var(--color-accent2);
 	letter-spacing:calc(var(--space-sm)*.5);
 	padding-block-start:4rem;
