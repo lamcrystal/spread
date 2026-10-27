@@ -18,7 +18,7 @@
 	--text-callout: clamp(calc(var(--text-body) * 1.5), 6vw, calc(var(--text-body) * 2));
 	--text-display: clamp(calc(var(--text-body) * 2), 12vw, calc(var(--text-body) * 3.5));
 	--text-giant: clamp(calc(var(--text-body) * 6), 45vw, calc(var(--text-body) * 16));
-	--text-h1: clamp(calc(var(--text-body)*3), 30vw, calc(var(--text-body)*13));
+	--text-h1: clamp(calc(var(--text-body)*3), 25vw, calc(var(--text-body)*10.5));
 	--text-h2: calc(var(--text-h1)*0.6);
 	--text-h3: calc(var(--text-body)*1.5);
 
