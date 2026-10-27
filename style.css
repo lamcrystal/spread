@@ -200,6 +200,7 @@ article a {
 
 p {
 font-family: var(--font-body);
+margin-block-end:var(--space-sm);
 }
 
 .item2{
