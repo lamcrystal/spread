@@ -52,6 +52,8 @@ body{
 	line-height: 1.5;
 	background: var(--color-bg);
 	color: var(--color-main);
+	padding-inline-start: var(--space-md);
+	scroll-padding-inline-end: var(--space-md);
 }
 
 article p {
