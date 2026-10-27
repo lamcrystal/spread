@@ -37,7 +37,7 @@
 	--line: 0.1rem solid var(--color-main);
 
 /* Desktop (the word experiments) will shift to the left from the stacked mobile position*/
-@media (width > 500px) {
+@media (width > 700px) {
     --text-display: clamp(calc(var(--text-body) * 2), 5vw, calc(var(--text-body) * 3.5));
 }
 }
@@ -155,7 +155,7 @@ ol {
 	row-gap: var(--space-lg);
 	grid-template-columns: var(--columns, 1fr);
 
-	@media (width > 500px) {
+	@media (width > 700px) {
 		--columns: 1fr 1fr;
 		column-gap: var(--space-lg);
 	}
@@ -163,10 +163,10 @@ ol {
 
 .item1, .item7, .item11 {
 	display: none;
-	@media (width > 500px) { display: block; }
+	@media (width > 700px) { display: block; }
 }
 
-@media (width > 500px) {
+@media (width > 700px) {
  /* article ol:nth-of-type(1) {
     grid-template-areas:
       "item1 item2"
@@ -325,7 +325,7 @@ letter-spacing: -0.1em;
 	padding-block: var(--space-lg);
 }
 
-@media (width > 500px) {
+@media (width > 700px) {
 	/* First grid section */
 article ol:nth-of-type(1) {
 	grid-template-columns: 1fr 1fr;
