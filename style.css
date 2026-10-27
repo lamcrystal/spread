@@ -87,6 +87,68 @@ h3{
 	padding-block-end: var(--space-md);
 }
 
+
+nav,
+footer {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-md);
+  background: var(--color-bg);
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding-block: var(--space-sm);
+}
+
+nav a,
+footer a {
+  --link-color: var(--color-main);
+
+  padding-block: var(--space-sm);
+  color: var(--color-main);
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  line-height: 1;
+  text-transform: lowercase;
+  text-decoration: none;
+  border-block-end: 0.15rem solid var(--link-color);
+}
+
+/* navigation styled */
+nav a:hover,
+footer a:hover {
+  color: var(--link-color);
+}
+
+.yellowlink {
+  --link-color: var(--color-accent2);
+}
+
+.redlink {
+  --link-color: var(--color-accent);
+}
+
+footer {
+  padding-block: var(--space-lg);
+}
+
+@media (width < 700px) {
+  nav {
+    justify-content: flex-start;
+    overflow-x: auto;
+  }
+
+  nav a,
+  footer a {
+    white-space: nowrap;
+    font-size: 1rem;
+  }
+}
+
+
 /* Grid (movile one column, stacks everything in order, the desktop will shift word experiments to the left column*/
 ol {
 	display: grid;
@@ -128,32 +190,6 @@ ol {
   .word-experiment  { grid-area: word-experiment; }
   .word-experiment1 { grid-area: word-experiment1; }
 }
-/* old nav */
-/* to right align the nav */
-/*to make it stay at the top of page but everything else scrollable*/
-/* nav {
-	position: sticky;
-	top: 0;
-	z-index: 1;
-	display: flex;
-
-	justify-content: center;
-	gap: var(--space-sm);
-	padding-block: var(--space-md);
-}
-
-/* a{
-	padding-block: 0.3em;
-	padding-inline: 0.8em;
-	border: 0.15rem solid var(--color-accent2);
-	color: var(--color-accent);
-	background: var(--color-bg);
-}
-
-footer {
-	display: flex;
-	justify-content: center;
-	} */
 
 article a {
   color: var(--color-accent);
@@ -322,61 +358,30 @@ nobr {
 	white-space: nowrap;
 }
 
-nav,
-footer {
-  display: flex;
-  justify-content: center;
-  gap: var(--space-md);
-  background: var(--color-bg);
+
+/* old nav */
+/* to right align the nav */
+/*to make it stay at the top of page but everything else scrollable*/
+/* nav {
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	display: flex;
+
+	justify-content: center;
+	gap: var(--space-sm);
+	padding-block: var(--space-md);
 }
 
-nav {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  padding-block: var(--space-sm);
-}
-
-nav a,
-footer a {
-  --link-color: var(--color-main);
-
-  padding-block: var(--space-sm);
-  color: var(--color-main);
-  font-family: var(--font-heading);
-  font-size: 1.25rem;
-  line-height: 1;
-  text-transform: lowercase;
-  text-decoration: none;
-  border-block-end: 0.15rem solid var(--link-color);
-}
-
-nav a:hover,
-footer a:hover {
-  color: var(--link-color);
-}
-
-.yellowlink {
-  --link-color: var(--color-accent2);
-}
-
-.redlink {
-  --link-color: var(--color-accent);
+/* a{
+	padding-block: 0.3em;
+	padding-inline: 0.8em;
+	border: 0.15rem solid var(--color-accent2);
+	color: var(--color-accent);
+	background: var(--color-bg);
 }
 
 footer {
-  padding-block: var(--space-lg);
-}
-
-@media (width < 700px) {
-  nav {
-    justify-content: flex-start;
-    overflow-x: auto;
-  }
-
-  nav a,
-  footer a {
-    white-space: nowrap;
-    font-size: 1rem;
-  }
-}
+	display: flex;
+	justify-content: center;
+	} */
