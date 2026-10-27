@@ -52,7 +52,7 @@ body{
 	line-height: 1.5;
 	background: var(--color-bg);
 	color: var(--color-main);
-	padding-inline-start: calc(var(--space-sm)*.9);
+	padding-inline-start: calc(var(--space-md));
 	padding-inline-end: var(--space-md);
 }
 
