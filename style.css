@@ -120,26 +120,27 @@ ol {
     grid-template-areas: "item11 item12";
   }*/
 
-  .item1  { grid-area: item1; }   .item2  { grid-area: item2; }
-  .item4  { grid-area: item4; }   .item6  { grid-area: item6; }
-  .item7  { grid-area: item7; }   .item8  { grid-area: item8; }
-  .item10 { grid-area: item10; }  .item11 { grid-area: item11; }
-  .item12 { grid-area: item12; }  .hull   { grid-area: hull; }
+  .item1  { grid-area: item1; } .item2 { grid-area: item2; }
+  .item4  { grid-area: item4; } .item6 { grid-area: item6; }
+  .item7  { grid-area: item7; } .item8 { grid-area: item8; }
+  .item10 { grid-area: item10; } .item11 { grid-area: item11; }
+  .item12 { grid-area: item12; } .hull { grid-area: hull; }
   .word-experiment  { grid-area: word-experiment; }
   .word-experiment1 { grid-area: word-experiment1; }
 }
-
+/* old nav */
+/* to right align the nav */
+/*to make it stay at the top of page but everything else scrollable*/
 /* nav {
 	position: sticky;
 	top: 0;
-	/*to make it stay at the top of page but everything else scrollable*/
 	z-index: 1;
 	display: flex;
-	/* to right align the nav */
+
 	justify-content: center;
 	gap: var(--space-sm);
 	padding-block: var(--space-md);
-} */
+}
 
 /* a{
 	padding-block: 0.3em;
@@ -147,13 +148,12 @@ ol {
 	border: 0.15rem solid var(--color-accent2);
 	color: var(--color-accent);
 	background: var(--color-bg);
-} */
-
+}
 
 footer {
 	display: flex;
 	justify-content: center;
-	}
+	} */
 
 article a {
   color: var(--color-accent);
@@ -321,9 +321,6 @@ article ol:nth-of-type(3) {
 nobr {
 	white-space: nowrap;
 }
-
-
-
 
 nav,
 footer {
