@@ -57,7 +57,7 @@ body{
 article p {
 	max-inline-size: var(--text-width);
 	padding-inline-start: var(--space-md);
-	scroll-padding-inline-end: var(--space-sm);
+	scroll-padding-inline-end: var(--space-md);
 }
 
 /* Headings */
