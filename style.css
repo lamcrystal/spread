@@ -234,7 +234,7 @@ letter-spacing: -0.1em;
 	color:var(--color-accent);
 }
 
-/* MAMMA - match the widths */
+/* MAMMA to match the widths of each line */
 .slashes { letter-spacing: 0.1em;   text-indent: 0.1em; }
 .zigzag  { letter-spacing: -0.1em;  text-indent: -0.1em; }
 .mamma   { letter-spacing: -0.06em; text-indent: -0.06em; }
@@ -247,7 +247,8 @@ letter-spacing: -0.1em;
 	padding-block-start:1.5rem;
 	padding-block-end:1.5rem;
 		.overlap {
-	letter-spacing: -0.65em;   /* pulls the M back over the A */
+	/* to pull the M over the A to overlap */
+	letter-spacing: -0.65em;
 	}
 }
 
