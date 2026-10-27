@@ -53,12 +53,11 @@ body{
 	background: var(--color-bg);
 	color: var(--color-main);
 	padding-inline-start: var(--space-sm);
-	scroll-padding-inline-end: var(--space-md);
+	padding-inline-end: var(--space-md);
 }
 
 article p {
 	max-inline-size: var(--text-width);
-	scroll-padding-inline-end: var(--space-md);
 }
 
 /* Headings */
