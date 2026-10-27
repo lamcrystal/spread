@@ -128,7 +128,7 @@ ol {
   .word-experiment1 { grid-area: word-experiment1; }
 }
 
-nav {
+/* nav {
 	position: sticky;
 	top: 0;
 	/*to make it stay at the top of page but everything else scrollable*/
@@ -138,15 +138,16 @@ nav {
 	justify-content: center;
 	gap: var(--space-sm);
 	padding-block: var(--space-md);
+} */
 
-a{
+/* a{
 	padding-block: 0.3em;
 	padding-inline: 0.8em;
 	border: 0.15rem solid var(--color-accent2);
 	color: var(--color-accent);
 	background: var(--color-bg);
-}
-}
+} */
+
 
 footer {
 	display: flex;
@@ -289,7 +290,7 @@ letter-spacing: -0.1em;
 
 @media (width > 500px) {
 	/* First grid section */
-	article ol:nth-of-type(1) {
+article ol:nth-of-type(1) {
 	grid-template-columns: 1fr 1fr;
 	grid-template-areas:
 	"item1 item2"
@@ -298,14 +299,14 @@ letter-spacing: -0.1em;
 	}
 
 	/* Poems and Telegrams section */
-	article ol:nth-of-type(2) {
+article ol:nth-of-type(2) {
 	grid-template-columns: 1fr 1fr;
 	grid-template-areas:
 	"item7 item8"
 	"hull item10";
 	}
 	/* after onecanalsoeliminate... */
-	article ol:nth-of-type(3) {
+article ol:nth-of-type(3) {
 	grid-template-columns: 1fr 1fr;
 	grid-template-areas:
 	"item11 item12";
@@ -316,4 +317,11 @@ letter-spacing: -0.1em;
 	}
 }
 
-nobr { white-space: nowrap; }
+nobr {
+	white-space: nowrap;
+}
+
+
+
+
+
