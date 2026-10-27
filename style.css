@@ -31,7 +31,6 @@
 	--color-main:black;
 	--color-accent:rgb(222, 44, 72);
 	--color-accent2:rgb(255, 171, 26);
-	--link-color
 
 /* Line */
 	--line: 0.1rem solid var(--color-main);
@@ -40,7 +39,7 @@
 @media (width > 700px) {
     --text-display: clamp(calc(var(--text-body) * 2), 5vw, calc(var(--text-body) * 3.5));
 }
-
+}
 
 /* Base (Mobile) */
 
@@ -153,10 +152,10 @@ footer {
 ol {
 	display: grid;
 	row-gap: var(--space-lg);
-	grid-template-columns: var(--columns, 1fr);
+	grid-template-columns: var(--columns, minmax(0, 1fr));
 
 	@media (width > 700px) {
-		--columns: 1fr 1fr;
+		--columns: minmax(0, 1fr) minmax(0, 1fr);
 		column-gap: var(--space-lg);
 	}
 }
@@ -311,7 +310,6 @@ letter-spacing: -0.1em;
 .slow2{
 	font-family:var(--font-heading);
 	font-size: 2rem;
-	font-weight: 20;
 	color:var(--color-accent2);
 	letter-spacing:calc(var(--space-md));
 	padding-block:1.5rem;
