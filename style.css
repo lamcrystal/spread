@@ -31,6 +31,7 @@
 	--color-main:black;
 	--color-accent:rgb(222, 44, 72);
 	--color-accent2:rgb(255, 171, 26);
+	--link-color
 
 /* Line */
 	--line: 0.1rem solid var(--color-main);
