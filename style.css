@@ -258,6 +258,7 @@ letter-spacing: -0.1em;
 	color:var(--color-accent);
 	padding-block:var(--space-xl);
 	letter-spacing:calc(var(--space-lg)*-.5);
+	text-align: center;
 }
 
 /* HULL and LIVERPOOL */
