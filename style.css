@@ -80,6 +80,7 @@ h2 {
 	font-size: var(--text-h2);
 	letter-spacing: -0.15em;
 	line-height: 0.8;
+	margin-block-end: var(--space-md);
 	/* padding-block-end: 2rem; */
 }
 
