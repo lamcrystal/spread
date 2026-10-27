@@ -38,7 +38,6 @@
 /* Desktop (the word experiments) will shift to the left from the stacked mobile position*/
 @media (width > 500px) {
     --text-display: clamp(calc(var(--text-body) * 2), 5vw, calc(var(--text-body) * 3.5));
-    --text-h1: clamp(calc(var(--text-body) * 3.5), 11vw, calc(var(--text-body) * 10));
 }
 }
 
@@ -91,11 +90,11 @@ h3{
 ol {
 	display: grid;
 	row-gap: var(--space-lg);
+	grid-template-columns: var(--columns, 1fr);
 
 	@media (width > 500px) {
-	grid-template-columns: 1fr, 1fr;
-	grid-template-columns:1fr;
-	grid-template-areas:
+		--columns: 1fr 1fr;
+		column-gap: var(--space-lg);
 	}
 }
 
@@ -214,7 +213,7 @@ letter-spacing: -0.1em;
 /* Jazz */
 .word-experiment2{
 	font-family:var(--font-heading);
-	font-size: clamp(4rem,40vw,20rem);
+	font-size: clamp(4rem,30vw,20rem);
 	color:var(--color-accent);
 	padding-block:var(--space-xl);
 	margin-inline-start: -1.5rem;
