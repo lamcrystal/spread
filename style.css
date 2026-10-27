@@ -237,6 +237,8 @@ letter-spacing: -0.1em;
 	width: 40%;
 	text-align: center;
 	color:var(--color-accent);
+	padding-inline-start: var(--space-sm);
+
 }
 
 /* MAMMA to match the widths of each line */
@@ -255,6 +257,7 @@ letter-spacing: -0.1em;
 	/* to pull the M over the A to overlap */
 	letter-spacing: -0.65em;
 	}
+	padding-inline-start: var(--space-sm);
 }
 
 /* Jazz */
@@ -272,7 +275,9 @@ letter-spacing: -0.1em;
   font-family: "Julius Sans One", sans-serif;
   font-size: 3rem;
   line-height: 1.2;
-  color: var(--color-accent);
+  	color: var(--color-accent);
+	padding-inline-start: var(--space-sm);
+
 
    /* to stack the two words */
   span {
