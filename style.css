@@ -297,18 +297,21 @@ letter-spacing: -0.1em;
 
 .punctuation{
 	font-family:var(--font-heading);
-	font-size: clamp(1.75rem, 9vw, 4rem);
+	font-size: clamp(1.75rem, 12vw, 4rem);
 	line-height: 3rem;
 	color:var(--color-accent2);
-	padding-block:1.5rem;
+	/* padding-block:1.5rem; */
+	/* padding-block: clamp(2.5rem, 0vw, 8rem); */
 }
 
 .punctuation2{
 	font-family:var(--font-heading);
-	font-size: clamp(2.5rem, 15vw, 8rem);
+	/* https://claude.ai/share/7f69fb2f-102a-4f97-a76c-f02c4b748b82 */
+	/* We tried the hyphen look but did not think the readabiity was up to par so claude and andrew said clamp was another way to help us out. */
+	font-size: clamp(2.5rem, 25vw, 8rem);
 	color:var(--color-accent2);
 	letter-spacing:calc(var(--space-sm)*.5);
-	padding-block-start:4rem;
+	/* padding-block-start:4rem; */
 	padding-block-end: 10rem;
 }
 
