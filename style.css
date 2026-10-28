@@ -13,7 +13,7 @@
 	--page-padding: clamp(var(--space-sm), 4vw, var(--space-md));
 
 /* Text/ type size system */
-	--text-body: clamp(1rem, 0.85rem + 0.5vw, 1.2rem);
+	--text-body: clamp(1rem, 0.85rem + 0.7vw, 1.2rem);
 	--text-small: calc(var(--text-body) * 0.85);
 	--text-callout: clamp(calc(var(--text-body) * 1.5), 6vw, calc(var(--text-body) * 2));
 	--text-display: clamp(calc(var(--text-body) * 2), 12vw, calc(var(--text-body) * 3.5));
@@ -190,6 +190,7 @@ article a {
 p {
 font-family: var(--font-body);
 margin-block-end:var(--space-sm);
+line-height:1.86rem;
 }
 
 .item2{
