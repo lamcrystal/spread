@@ -234,7 +234,7 @@ letter-spacing: -0.1em;
 
 /* DAMO */
 /* https://claude.ai/share/7f69fb2f-102a-4f97-a76c-f02c4b748b82 */
-/* We could not figure out what was causing such a big gap in our text but this help us come to the conclusion the row gap in our ol was too big so it increased the size of damo and jazz too much */
+/* We could not figure out what was causing such a big gap in our text but this help us come to the conclusion the row gap in our ol was too big so it increased the size of damo and jazz */
 .word-experiment1{
 	font-family:"Permanent Marker";
 	font-size: 7rem;
@@ -312,6 +312,7 @@ letter-spacing: -0.1em;
 	color:var(--color-main);
 	letter-spacing:calc(var(--space-sm)*-.15);
 	padding-block:1.5rem;
+	line-height: calc(var(--space-md)*1.2);
 }
 
 .slow2{
