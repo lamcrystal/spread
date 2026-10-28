@@ -311,6 +311,7 @@ letter-spacing: -0.1em;
 	letter-spacing:calc(var(--space-sm)*.5);
 	padding-block-start:4rem;
 	padding-block-end: 10rem;
+	overflow: hidden;
 }
 
 .slow{
