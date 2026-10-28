@@ -52,7 +52,6 @@ body{
 	line-height: 1.5;
 	background: var(--color-bg);
 	color: var(--color-main);
-	margin-inline-start:var(--space-sm);
 }
 
 article p {
@@ -298,7 +297,7 @@ letter-spacing: -0.1em;
 
 .punctuation{
 	font-family:var(--font-heading);
-	font-size: 4rem;
+	font-size: clamp(1.75rem, 9vw, 4rem);
 	line-height: 3rem;
 	color:var(--color-accent2);
 	padding-block:1.5rem;
@@ -306,12 +305,11 @@ letter-spacing: -0.1em;
 
 .punctuation2{
 	font-family:var(--font-heading);
-	font-size: 8rem;
+	font-size: clamp(2.5rem, 15vw, 8rem);
 	color:var(--color-accent2);
 	letter-spacing:calc(var(--space-sm)*.5);
 	padding-block-start:4rem;
 	padding-block-end: 10rem;
-	overflow: hidden;
 }
 
 .slow{
