@@ -217,20 +217,30 @@ letter-spacing: -0.1em;
 .word-experiment{
 	font-family: "Julius Sans One";
 	font-size: 4rem;
-	line-height: 4rem;
+	line-height: 1;
 	width: 40%;
 	text-align: center;
 	color:var(--color-accent);
 	padding-inline-start: var(--space-sm);
 	padding-block-start: var(--space-sm);
 	padding-block-end: var(--space-sm);
-
 }
 
-/* MAMMA to match the widths of each line */
-.slashes { letter-spacing: 0.1em;   text-indent: 0.1em; }
-.zigzag  { letter-spacing: -0.1em;  text-indent: -0.1em; }
-.mamma   { letter-spacing: -0.06em; text-indent: -0.06em; }
+/* to match the widths of each line of the MAMMA word experiment */
+.slashes{
+	letter-spacing: 0.22em;
+	text-indent: 0.1em;
+}
+.zigzag{
+	letter-spacing: -0.08em;
+	text-indent: -0.1em; }
+
+.mamma{
+	font-size: 1.25em;
+/* 1.25em instead of 5rem so that its always 1.25× the other two lines of this word experiment*/
+	letter-spacing: -0.09em;
+	text-indent: -0.06em;
+}
 
 /* DAMO */
 /* https://claude.ai/share/7f69fb2f-102a-4f97-a76c-f02c4b748b82 */
