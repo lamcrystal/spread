@@ -313,7 +313,7 @@ letter-spacing: -0.1em;
 	letter-spacing:calc(var(--space-sm)*.5);
 	/* padding-block-start:4rem; */
 	padding-block-end: 10rem;
-	padding-block-start:var(--space-md);
+	padding-block-start:var(--space-lg);
 }
 
 .slow{
@@ -339,7 +339,7 @@ letter-spacing: -0.1em;
 	font-size: clamp(2rem, 10vw, 3rem);
 	color: var(--color-accent);
 	padding-block: var(--space-lg);
-	line-height: 2.5rem;
+	line-height: 2.8rem;
 }
 
 /* The tutor helped us structure the ol for mobile in media */
