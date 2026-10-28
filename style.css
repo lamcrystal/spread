@@ -95,7 +95,7 @@ nav,
 footer {
   display: flex;
   justify-content: center;
-  gap: var(--space-md);
+  gap: clamp(var(--space-sm),4vw, var(--space-md));
   background: var(--color-bg);
 }
 
@@ -109,14 +109,14 @@ nav {
 nav a,
 footer a {
   --link-color: var(--color-main);
-
   padding-block: var(--space-sm);
   color: var(--color-main);
   font-family: var(--font-heading);
-  font-size: 1.25rem;
+  font-size: clamp(0.7rem, 3.5vw, 1.2rem);
   line-height: 1;
   text-transform: lowercase;
   text-decoration: none;
+  white-space: nowrap;
   border-block-end: 0.15rem solid var(--link-color);
 }
 
@@ -136,19 +136,6 @@ footer a:hover {
 
 footer {
   padding-block: var(--space-lg);
-}
-
-@media (width < 700px) {
-  nav {
-    justify-content: flex-start;
-    overflow-x: auto;
-  }
-
-  nav a,
-  footer a {
-    white-space: nowrap;
-    font-size: 1rem;
-  }
 }
 
 /* The tutor helped us to make the grid using ol and itemization */
