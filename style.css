@@ -314,6 +314,7 @@ letter-spacing: -0.1em;
 	/* padding-block-start:4rem; */
 	padding-block-end: 10rem;
 	padding-block-start:var(--space-lg);
+	line-height: clamp(2.5rem, 10vw, 8rem);
 }
 
 .slow{
