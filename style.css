@@ -254,7 +254,7 @@ letter-spacing: -0.1em;
 	padding-inline-end: 0.4em;
 	border-width: 0.05rem;
 	border-style: solid;
-	border-color: var(--color-main);
+	border-color: var(--color-accent);
 	vertical-align: middle;
 }
 
@@ -285,7 +285,7 @@ letter-spacing: -0.1em;
 /* HULL and LIVERPOOL */
 .hull {
 	font-family: var(--font-accent), sans-serif;
-	font-size: clamp(4rem,30vw,20rem);
+	font-size: var(--text-display);
 	line-height: 1.2;
 	color: var(--color-accent);
 	padding-inline-start: var(--space-sm);
