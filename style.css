@@ -433,6 +433,9 @@ h2 {
 .word-experiment{
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/break-inside */
 	break-inside: avoid;
+	/* https://claude.ai/share/7f69fb2f-102a-4f97-a76c-f02c4b748b82 */
+	/* Using an old version because that is what works in safari */
+	page-break-inside
 }
 }
 
