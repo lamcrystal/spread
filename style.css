@@ -36,7 +36,7 @@
 
 /* Desktop (the word experiments) will shift to the left from the stacked mobile position*/
 @media (width > 700px) {
-    --text-display: clamp(calc(var(--text-body) * 2), 5vw, calc(var(--text-body) * 3.5));
+	--text-display: clamp(calc(var(--text-body) * 2), 5vw, calc(var(--text-body) * 3.5));
 }
 }
 
@@ -101,45 +101,45 @@ nobr {
 
 nav,
 footer {
-  display: flex;
-  justify-content: center;
-  gap: clamp(var(--space-sm),4vw, var(--space-md));
-  background: var(--color-bg);
+	display: flex;
+	justify-content: center;
+	gap: clamp(var(--space-sm),4vw, var(--space-md));
+	background: var(--color-bg);
 }
 
 nav {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  padding-block: var(--space-sm);
+	position: sticky;
+	top: 0;
+	z-index: 10;
+	padding-block: var(--space-sm);
 }
 
 nav a,
 footer a {
-  --link-color: var(--color-main);
-  padding-block: var(--space-sm);
-  color: var(--color-main);
-  font-family: var(--font-heading);
-  font-size: clamp(0.7rem, 3.5vw, 1.2rem);
-  line-height: 1;
-  text-transform: lowercase;
-  text-decoration: none;
-  white-space: nowrap;
-  border-block-end: 0.15rem solid var(--link-color);
+	--link-color: var(--color-main);
+	padding-block: var(--space-sm);
+	color: var(--color-main);
+	font-family: var(--font-heading);
+	font-size: clamp(0.7rem, 3.5vw, 1.2rem);
+	line-height: 1;
+	text-transform: lowercase;
+	text-decoration: none;
+	white-space: nowrap;
+	border-block-end: 0.15rem solid var(--link-color);
 }
 
 /* navigation styled */
 nav a:hover,
 footer a:hover {
-  color: var(--link-color);
+	color: var(--link-color);
 }
 
 .yellowlink {
-  --link-color: var(--color-accent2);
+	--link-color: var(--color-accent2);
 }
 
 .redlink {
-  --link-color: var(--color-accent);
+	--link-color: var(--color-accent);
 }
 
 footer {
@@ -166,33 +166,32 @@ ol {
 }
 
 @media (width > 700px) {
- /* article ol:nth-of-type(1) {
-    grid-template-areas:
-      "item1 item2"
-      "word-experiment item4"
-      "word-experiment1 item6";
-  }
-  article ol:nth-of-type(2) {
-    grid-template-areas:
-      "item7 item8"
-      "hull  item10";
-  }
-  article ol:nth-of-type(3) {
-    grid-template-areas: "item11 item12";
-  }*/
+/* article ol:nth-of-type(1) {
+	grid-template-areas:
+	"item1 item2"
+	"word-experiment item4"
+	"word-experiment1 item6";
+	}
+	article ol:nth-of-type(2) {
+	grid-template-areas:
+	"item7 item8"
+	"hull  item10";
+	}
+	article ol:nth-of-type(3) {
+	grid-template-areas: "item11 item12";
+	}*/
 
-  .item1 {grid-area: item1;} .item2 {grid-area: item2;}
-  .item4 {grid-area: item4;} .item6 { grid-area: item6;}
-  .item7 {grid-area: item7;} .item8 { grid-area: item8;}
-  .item10 {grid-area: item10} .item11 {grid-area: item11;}
-  .item12 {grid-area: item12;} .hull {grid-area: hull;}
-  .word-experiment  {grid-area: word-experiment;}
-  .word-experiment1 {grid-area: word-experiment1;}
+	.item1 {grid-area: item1;} .item2 {grid-area: item2;}	.item4 {grid-area: item4;} .item6 { grid-area: item6;}
+	.item7 {grid-area: item7;} .item8 { grid-area: item8;}
+	.item10 {grid-area: item10} .item11 {grid-area: item11;}
+	.item12 {grid-area: item12;} .hull {grid-area: hull;}
+	.word-experiment  {grid-area: word-experiment;}
+	.word-experiment1 {grid-area: word-experiment1;}
 }
 
 article a {
-  color: var(--color-accent);
-  text-decoration: underline;
+	color: var(--color-accent);
+	text-decoration: underline;
 }
 
 mark{
@@ -297,20 +296,20 @@ letter-spacing: -0.1em;
 
 /* HULL and LIVERPOOL */
 .hull {
-  font-family: var(--font-accent), sans-serif;
-  font-size: var(--text-display);
-  line-height: 1.2;
-  	color: var(--color-accent);
+	font-family: var(--font-accent), sans-serif;
+	font-size: var(--text-display);
+	line-height: 1.2;
+	color: var(--color-accent);
 	padding-inline-start: var(--space-sm);
 
 
 /* to stack the two words */
-  span {
-    display: block;
-  }
- /* to make the width of HULL match LIVERPOOL */
+span {
+	display: block;
 	}
-  .spread {
+/* to make the width of HULL match LIVERPOOL */
+	}
+	.spread {
 	letter-spacing: 0.9em;
 }
 
