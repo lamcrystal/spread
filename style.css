@@ -90,6 +90,11 @@ h3{
 	padding-block-end: var(--space-md);
 }
 
+p {
+font-family: var(--font-body);
+margin-block-end:var(--space-sm);
+line-height:1.85rem;
+}
 
 nav,
 footer {
@@ -187,10 +192,10 @@ article a {
   text-decoration: underline;
 }
 
-p {
-font-family: var(--font-body);
-margin-block-end:var(--space-sm);
-line-height:1.85rem;
+em{
+	color:var(--color-accent);
+	font-weight: bold;
+
 }
 
 .item2{
