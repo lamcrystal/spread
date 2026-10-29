@@ -15,7 +15,7 @@
 	--text-body: clamp(1rem, 0.85rem + 0.8vw, 1.2rem);
 	--text-callout: clamp(calc(var(--text-body) * 1.5), 6vw, calc(var(--text-body) * 2));
 	--text-display: clamp(calc(var(--text-body) * 2), 12vw, calc(var(--text-body) * 3.5));
-	--text-h1: clamp(calc(var(--text-body)*3), 30vw, calc(var(--text-body)*10.5));
+	--text-h1: clamp(calc(var(--text-body)*3), 7rem + 5vw, calc(var(--text-body)*10));
 	--text-h2: calc(var(--text-h1)*0.6);
 	--text-h3: calc(var(--text-body)*1.5);
 
@@ -283,15 +283,19 @@ letter-spacing: -0.1em;
 	color: var(--color-accent);
 	padding-inline-start: var(--space-sm);
 
-
 /* to stack the two words HULL and LIVERPOOL */
 span {
 	display: block;
 	}
 /* to make the width of HULL match LIVERPOOL */
-	}
-	.spread {
+.spread {
 	letter-spacing: 0.9em;
+}
+}
+
+/* spread out the word HULL in the paragraph */
+.spaced {
+	letter-spacing: 0.5em;
 }
 
 /* pushtheseclosetogether and slooooowly */
