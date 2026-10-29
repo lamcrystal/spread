@@ -2,7 +2,6 @@
 --font-heading: "Archivo Black", sans-serif;
 --font-body:"Archivo", sans-serif;
 --font-accent: "Julius Sans One", sans-serif;
---font-marker: "Permanent Marker", sans-serif;
 
 /* Spacing value system to create a consistent rhythym */
 	--space-sm: 1rem;
@@ -211,7 +210,7 @@ em{
 /* Shape */
 .shape-spaced, .shape-bold{
 	font-family: var(--font-heading);
-	font-size: var(--space-md);
+	font-size: var(--text-callout);
 }
 
 .shape-spaced{
@@ -224,10 +223,9 @@ letter-spacing: -0.1em;
 
 /* MAMMA */
 .word-experiment{
-	font-family: "Julius Sans One";
-	font-size: 4rem;
+	font-family: var(--font-accent), sans-serif;
+	font-size: var(--text-display);
 	line-height: 1;
-	width: 40%;
 	text-align: center;
 	color:var(--color-accent);
 	padding-inline-start: var(--space-sm);
@@ -237,7 +235,7 @@ letter-spacing: -0.1em;
 
 /* to match the widths of each line of the MAMMA word experiment */
 .slashes{
-	letter-spacing: 0.22em;
+	letter-spacing: 0.2em;
 	text-indent: 0.1em;
 }
 .zigzag{
@@ -249,6 +247,18 @@ letter-spacing: -0.1em;
 /* 1.25em instead of 5rem so that its always 1.25× the other two lines of this word experiment*/
 	letter-spacing: -0.09em;
 	text-indent: -0.06em;
+}
+
+/* make into tiny print with a border, like a label on a medicine bottle: hard to read on purpose */
+.label{
+	font-size: 0.7em;
+	letter-spacing: 0.05em;
+	padding-inline-start: 0.4em;
+	padding-inline-end: 0.4em;
+	border-width: 0.05rem;
+	border-style: solid;
+	border-color: var(--color-main);
+	vertical-align: middle;
 }
 
 /* DAMO */
@@ -277,8 +287,8 @@ letter-spacing: -0.1em;
 
 /* HULL and LIVERPOOL */
 .hull {
-  font-family: "Julius Sans One", sans-serif;
-  font-size: 3rem;
+  font-family: var(--font-accent), sans-serif;
+  font-size: var(--text-display);
   line-height: 1.2;
   	color: var(--color-accent);
 	padding-inline-start: var(--space-sm);
@@ -308,8 +318,6 @@ letter-spacing: -0.1em;
 	font-size: clamp(1.75rem, 12vw, 4rem);
 	line-height: 3rem;
 	color:var(--color-accent2);
-	/* padding-block:1.5rem; */
-	/* padding-block: clamp(2.5rem, 0vw, 8rem); */
 }
 
 .punctuation2{
