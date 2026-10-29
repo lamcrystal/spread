@@ -389,6 +389,8 @@ article ol:nth-of-type(3) {
 :root {
 /* fixed size for paper instead of scaling with the screen */
 	--text-body: 11pt;
+/* keep the red and yellow when printing */
+	print-color-adjust: exact;
 }
 
 /* turn off links and sticky nav */
@@ -403,6 +405,8 @@ ol {
 }
 
 /* start Poems and Telegrams on a new page */
+/* wanted to learn how to start the new section on a new page https://claude.ai/share/b24e5856-b5b0-4285-817f-32a29d35d0db */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/break-before */
 h2 {
 	break-before: page;
 }
@@ -425,9 +429,10 @@ h2 {
 	padding-block: 0;
 	}
 
+/* Keep our MAMMA word experiment on the same page/ make sure it doesn't split up https://claude.ai/share/b24e5856-b5b0-4285-817f-32a29d35d0db */
 .word-experiment{
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/break-inside */
 	break-inside: avoid;
-	page-break-inside: avoid;
 }
 }
 
