@@ -12,9 +12,11 @@
 	--page-padding: clamp(var(--space-sm), 4vw, var(--space-md));
 
 /* Text/ type size system */
+/* the body size scales with the window, and most other sizes are multiples of it, so the whole page scales together */
 	--text-body: clamp(1rem, 0.85rem + 0.8vw, 1.2rem);
 	--text-callout: clamp(calc(var(--text-body) * 1.5), 6vw, calc(var(--text-body) * 2));
 	--text-display: clamp(calc(var(--text-body) * 2), 12vw, calc(var(--text-body) * 3.5));
+	/* h1 - 7rem + 5vw: big on phones and keeps growing slowly on desktop; 10× body text at most (to make it approx the recommended 1:10 ratio) */
 	--text-h1: clamp(calc(var(--text-body)*3), 7rem + 5vw, calc(var(--text-body)*10));
 	--text-h2: calc(var(--text-h1)*0.6);
 	--text-h3: calc(var(--text-body)*1.5);
@@ -25,7 +27,7 @@
 	--color-accent:rgb(222, 44, 72);
 	--color-accent2:rgb(255, 171, 26);
 
-/* Desktop (the word experiments) will shift to the left from the stacked mobile position*/
+/* Desktop (the word experiments) will shift to the left from the stacked mobile position - in 2 columns the experiments only get half the page, so --text-display scales off a smaller vw on desktop */
 @media (width > 700px) {
 	--text-display: clamp(calc(var(--text-body) * 2), 5vw, calc(var(--text-body) * 3.5));
 }
@@ -66,6 +68,7 @@ h1,h2 {
 	width: fit-content;
 	padding-block-start: var(--space-lg);
 	padding-block-end: var(--space-md);
+	/* underline */
 	border-block-end: 0.15rem solid var(--color-main);
 	font-family: var(--font-heading);
 	text-transform: lowercase;
@@ -156,6 +159,7 @@ ol {
 	}
 }
 
+/* empty spacers that on desktop fill the left column so the text starts on the right, and on mobile are hidden */
 .item1, .item7, .item11{
 	display: none;
 	@media (width > 700px) { display: block; }
@@ -227,6 +231,7 @@ letter-spacing: -0.1em;
 }
 
 /* to match the widths of each line of the MAMMA word experiment */
+/* em letter-spacing scales with the text, so the three lines stay matched at every size */
 .slashes{
 	letter-spacing: 0.2em;
 	text-indent: 0.1em;
@@ -268,6 +273,7 @@ letter-spacing: -0.1em;
 }
 
 /* Jazz */
+/* vw so jazz always spans a big chunk of screen width and the negative letter-spacing crowds the letters together like Munari's version */
 .word-experiment2{
 	font-family:var(--font-heading);
 	font-size: clamp(4rem,30vw,20rem);
@@ -364,23 +370,23 @@ article ol:nth-of-type(1) {
 	"item1 item2"
 	"word-experiment item4"
 	"word-experiment1 item6";
-	}
+}
 
 	/* Poems and Telegrams section */
 article ol:nth-of-type(2) {
 	grid-template-areas:
 	"item7 item8"
 	"hull item10";
-	}
+}
 	/* after onecanalsoeliminate... */
 article ol:nth-of-type(3) {
 	grid-template-areas:
 	"item11 item12";
-	}
+}
 
-	.item1, .item7, .item11 {
+.item1, .item7, .item11 {
 	display: block;
-	}
+}
 }
 
 /* Print */
@@ -410,23 +416,23 @@ h2 {
 	break-before: page;
 }
 
- .word-experiment2 {
+.word-experiment2 {
 	font-size: 9rem;
 	line-height: 0.8;
 	padding-block-start: 8rem;
 	margin: 0;
-	}
+}
 
 .punctuation {
 	font-size: 2.5rem;
 	line-height: 0.8;
-	}
+}
 
 .punctuation2 {
 	font-size: 3.5rem;
 	line-height: 0.7;
 	padding-block: 0;
-	}
+}
 
 /* Keep our MAMMA word experiment on the same page/ make sure it doesn't split up https://claude.ai/share/b24e5856-b5b0-4285-817f-32a29d35d0db */
 .word-experiment{
@@ -437,5 +443,5 @@ h2 {
 	page-break-inside:avoid;
 	}
 }
-/* WE WENT TO FOUR TUTORS FOR HELP!!! */
+/* We met with four tutors over the course of this project for help with the grid, scaling and print. */
 /* We did our best thank you! */
