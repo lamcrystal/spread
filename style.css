@@ -241,7 +241,8 @@ letter-spacing: -0.1em;
 	text-indent: -0.06em;
 }
 
-/* make into tiny print with a border, like a label on a medicine bottle: hard to read on purpose */
+/* style tetradecapodous and tryanlyonnonodont */
+/* make the long unfamiliar words look like a label on a medicine bottle: a bit smaller and harder to read on purpose */
 .label{
 	font-size:0.9em;
 	padding-inline-start: 0.4em;
