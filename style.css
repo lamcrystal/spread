@@ -48,8 +48,8 @@ body{
 }
 
 p {
-	font-family: var(--font-body);
 	margin-block-end:var(--space-sm);
+	font-family: var(--font-body);
 	line-height:1.7;
 }
 
@@ -67,11 +67,11 @@ nobr {
 
 h1,h2 {
 	width: fit-content;
+	padding-block-start: var(--space-lg);
+	padding-block-end: var(--space-md);
+	border-block-end: 0.15rem solid var(--color-main);
 	font-family: var(--font-heading);
 	text-transform: lowercase;
-	padding-block-end: var(--space-md);
-	padding-block-start: var(--space-lg);
-	border-block-end: 0.15rem solid var(--color-main);
 	letter-spacing: -0.15em;
 	line-height: .8;
 }
@@ -81,17 +81,17 @@ h1 {
 }
 
 h2 {
-	font-size: var(--text-h2);
 	margin-block-end: var(--space-md);
+	font-size: var(--text-h2);
 	/* padding-block-end: 2rem; */
 }
 
 h3{
-	font-size: var(--text-h3);
 	padding-block-start: var(--space-sm);
 	padding-block-end: var(--space-md);
+	font-size: var(--text-h3);
 }
-
+/* navigation */
 nav,
 footer {
 	display: flex;
@@ -102,7 +102,9 @@ footer {
 
 nav {
 	position: sticky;
-	top: 0;
+	/* This makes it stick at the top of the window and as it scrolls it does the same */
+	inset-block-start: 0;
+	/* This puts nav on a higher layer so the page content scrolls underneath it instead of on top of it*/
 	z-index: 10;
 	padding-block: var(--space-sm);
 }
