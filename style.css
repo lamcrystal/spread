@@ -13,10 +13,8 @@
 
 /* Text/ type size system */
 	--text-body: clamp(1rem, 0.85rem + 0.8vw, 1.2rem);
-	--text-small: calc(var(--text-body) * 0.85);
 	--text-callout: clamp(calc(var(--text-body) * 1.5), 6vw, calc(var(--text-body) * 2));
 	--text-display: clamp(calc(var(--text-body) * 2), 12vw, calc(var(--text-body) * 3.5));
-	--text-giant: clamp(calc(var(--text-body) * 6), 45vw, calc(var(--text-body) * 16));
 	--text-h1: clamp(calc(var(--text-body)*3), 30vw, calc(var(--text-body)*10.5));
 	--text-h2: calc(var(--text-h1)*0.6);
 	--text-h3: calc(var(--text-body)*1.5);
@@ -196,7 +194,7 @@ mark{
 	width: fit-content;
 	border-block-start: 0.15rem solid var(--color-main);
 	border-block-end: 0.15rem solid var(--color-main);
-	padding-block: 1rem;
+	padding-block: var(--space-sm);
 }
 
 /* Shape */
@@ -248,14 +246,12 @@ letter-spacing: -0.1em;
 
 /* make into tiny print with a border, like a label on a medicine bottle: hard to read on purpose */
 .label{
-	font-size: 0.55em;
-	letter-spacing: 0.05em;
+	font-size:0.9em;
 	padding-inline-start: 0.4em;
 	padding-inline-end: 0.4em;
-	border-width: 0.05rem;
+	border-width: 0.1rem;
 	border-style: solid;
 	border-color: var(--color-accent);
-	vertical-align: middle;
 }
 
 /* DAMO */
