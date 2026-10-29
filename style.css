@@ -24,6 +24,7 @@
 	--color-main:black;
 	--color-accent:rgb(222, 44, 72);
 	--color-accent2:rgb(255, 171, 26);
+	--link-color:(var(--color-main));
 
 /* Line */
 	--line: 0.1rem solid var(--color-main);
@@ -111,7 +112,7 @@ nav {
 
 nav a,
 footer a {
-	--link-color: var(--color-main);
+	color: var(--link-color);
 	padding-block: var(--space-sm);
 	color: var(--color-main);
 	font-family: var(--font-heading);
