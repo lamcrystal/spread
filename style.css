@@ -89,9 +89,9 @@ h3{
 }
 
 p {
-font-family: var(--font-body);
-margin-block-end:var(--space-sm);
-line-height:1.7;
+	font-family: var(--font-body);
+	margin-block-end:var(--space-sm);
+	line-height:1.7;
 }
 
 /* Added this at the end of every paragrpah to make sure we don't have any widows */
@@ -143,7 +143,7 @@ footer a:hover {
 }
 
 footer {
-  padding-block: var(--space-lg);
+	padding-block: var(--space-lg);
 }
 
 /* The tutor helped us to make the grid using ol and itemization */
