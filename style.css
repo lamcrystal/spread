@@ -384,3 +384,26 @@ article ol:nth-of-type(3) {
 	}
 }
 
+/* Print */
+@media print {
+:root {
+/* fixed size for paper instead of scaling with the screen */
+	--text-body: 11pt;
+}
+
+/* turn off links and sticky nav */
+nav,
+footer {
+	display: none;
+}
+
+/* keep the 2-column spread on the page */
+ol {
+	--columns: minmax(0, 1fr) minmax(0, 1fr);
+}
+
+/* start Poems and Telegrams on a new page */
+h2 {
+	break-before: page;
+}
+}
