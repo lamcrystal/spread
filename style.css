@@ -195,7 +195,11 @@ article a {
 em{
 	color:var(--color-accent);
 	font-weight: bold;
+}
 
+.yellowem{
+	color:var(--color-accent2);
+	font-weight: bolder;
 }
 
 .item2{
