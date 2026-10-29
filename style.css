@@ -195,12 +195,12 @@ article a {
   text-decoration: underline;
 }
 
-em{
+mark{
 	color:var(--color-accent);
 	font-weight: bold;
 }
 
-.yellowem{
+.yellowmark{
 	color:var(--color-accent2);
 	font-weight: bolder;
 }
@@ -395,3 +395,4 @@ article ol:nth-of-type(3) {
 	display: block;
 	}
 }
+
