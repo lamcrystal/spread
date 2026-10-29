@@ -91,7 +91,12 @@ h3{
 p {
 font-family: var(--font-body);
 margin-block-end:var(--space-sm);
-line-height:1.85rem;
+line-height:1.7;
+}
+
+/* Added this at the end of every paragrpah to make sure we don't have any widows */
+nobr {
+	white-space: nowrap;
 }
 
 nav,
@@ -176,13 +181,13 @@ ol {
     grid-template-areas: "item11 item12";
   }*/
 
-  .item1 { grid-area: item1; } .item2 { grid-area: item2; }
-  .item4 { grid-area: item4; } .item6 { grid-area: item6; }
-  .item7 { grid-area: item7; } .item8 { grid-area: item8; }
-  .item10 { grid-area: item10; } .item11 { grid-area: item11; }
-  .item12 { grid-area: item12; } .hull { grid-area: hull; }
-  .word-experiment  { grid-area: word-experiment; }
-  .word-experiment1 { grid-area: word-experiment1; }
+  .item1 {grid-area: item1;} .item2 {grid-area: item2;}
+  .item4 {grid-area: item4;} .item6 { grid-area: item6;}
+  .item7 {grid-area: item7;} .item8 { grid-area: item8;}
+  .item10 {grid-area: item10} .item11 {grid-area: item11;}
+  .item12 {grid-area: item12;} .hull {grid-area: hull;}
+  .word-experiment  {grid-area: word-experiment;}
+  .word-experiment1 {grid-area: word-experiment1;}
 }
 
 article a {
@@ -224,13 +229,18 @@ letter-spacing: -0.1em;
 /* MAMMA */
 .word-experiment{
 	font-family: var(--font-accent), sans-serif;
-	font-size: var(--text-display);
+	font-size: clamp(calc(var(--text-body) * 2.5), 10vw, calc(var(--text-body) * 4));;
 	line-height: 1;
-	text-align: center;
+
 	color:var(--color-accent);
 	padding-inline-start: var(--space-sm);
 	padding-block-start: var(--space-sm);
 	padding-block-end: var(--space-sm);
+
+	/* to stack the three lines */
+	span {
+		display: block;
+	}
 }
 
 /* to match the widths of each line of the MAMMA word experiment */
@@ -251,7 +261,7 @@ letter-spacing: -0.1em;
 
 /* make into tiny print with a border, like a label on a medicine bottle: hard to read on purpose */
 .label{
-	font-size: 0.7em;
+	font-size: 0.55em;
 	letter-spacing: 0.05em;
 	padding-inline-start: 0.4em;
 	padding-inline-end: 0.4em;
@@ -294,7 +304,7 @@ letter-spacing: -0.1em;
 	padding-inline-start: var(--space-sm);
 
 
-   /* to stack the two words */
+/* to stack the two words */
   span {
     display: block;
   }
@@ -316,7 +326,7 @@ letter-spacing: -0.1em;
 .punctuation{
 	font-family:var(--font-heading);
 	font-size: clamp(1.75rem, 12vw, 4rem);
-	line-height: 3rem;
+	line-height: 0.9;
 	color:var(--color-accent2);
 }
 
@@ -385,36 +395,3 @@ article ol:nth-of-type(3) {
 	display: block;
 	}
 }
-
-/* Added this at the end of every paragrpah to make sure we don't have any widows */
-nobr {
-	white-space: nowrap;
-}
-
-
-/* old nav */
-/* to right align the nav */
-/*to make it stay at the top of page but everything else scrollable*/
-/* nav {
-	position: sticky;
-	top: 0;
-	z-index: 1;
-	display: flex;
-
-	justify-content: center;
-	gap: var(--space-sm);
-	padding-block: var(--space-md);
-}
-
-/* a{
-	padding-block: 0.3em;
-	padding-inline: 0.8em;
-	border: 0.15rem solid var(--color-accent2);
-	color: var(--color-accent);
-	background: var(--color-bg);
-}
-
-footer {
-	display: flex;
-	justify-content: center;
-	} */
