@@ -12,8 +12,8 @@ We also made sure the visual experiments don’t get in the way of screen reader
 
 The print version keeps the colours, keeps the two-column spread, uses a fixed body size for paper, and starts “Poems and Telegrams” on a new page.
 
-We worked on this together from start to finish. We sketched the mobile and desktop layouts side by side in Figma, then built the page through pair programming, taking turns writing the HTML and CSS. Along the way we got help from a tutor with the grid structure, and from our professors’ feedback on scaling, overflow and our type system, which we cite in comments in our CSS.
+We worked on this together from start to finish. We sketched the mobile and desktop layouts side by side in Figma, then built the page through pair programming, taking turns writing the HTML and CSS in person and on calls. Along the way we got help from a tutor with the grid structure, and from our professors’ feedback on scaling, overflow and our type system, which we cite in comments in our CSS.
 
-By Crystal Lam and Natay.
+By Crystal Lam and Natay Yonatan.
 
 Based on [Project 2: Spread](https://typography-interaction-2627.github.io/project/2/).
